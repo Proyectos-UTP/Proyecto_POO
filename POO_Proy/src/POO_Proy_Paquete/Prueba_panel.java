@@ -4,10 +4,6 @@
  */
 package POO_Proy_Paquete;
 
-/**
- *
- * @author Jemand
- */
 public class Prueba_panel {
-    
+    //a
 }
