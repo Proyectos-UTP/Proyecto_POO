@@ -80,6 +80,7 @@ public class Login extends javax.swing.JPanel {
 
         add(Head, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 30));
 
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/pngwing.com (6).png"))); // NOI18N
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 430, 170));
 
@@ -87,10 +88,10 @@ public class Login extends javax.swing.JPanel {
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 10, 210, 260));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("INICIAR SESION");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 320, -1, 20));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, 210, 40));
         add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 480, 230, 10));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
