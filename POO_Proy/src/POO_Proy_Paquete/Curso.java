@@ -10,12 +10,6 @@ public class Curso extends Sistema_ev {
     
     //constructores
     
-    public Curso(String nombre, String sección, int créditos){
-        this.nombre = nombre;
-        this.sección = sección;
-        this.créditos = créditos;
-    }
-    
     //métodos
     public double promedio(){
     return ((this.getPc1()) + (this.getPc2()) + (this.getPc3()) + (this.getExp()) + (this.getExf()))/5;
@@ -42,7 +36,7 @@ public class Curso extends Sistema_ev {
                        "EXF: " + this.getExf() + "\n" +
                        "Promedio: " + this.promedio();
         }
-        
+       
     //Métodos get y set
 
     public String getNombre() {
