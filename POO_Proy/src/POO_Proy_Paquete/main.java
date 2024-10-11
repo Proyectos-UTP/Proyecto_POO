@@ -7,11 +7,12 @@ public class main {
         // Esta clase es para comprobar que las clases y sus relaciones entre ellas funcionan
         
         // Inicio de la prueba 1, crear un objecto de la calse docente el cual esté asociado a un curso
-        
+        //Esta clase ya no se puede utilizar debido a que las clases de los cursos son abstractas.
+        /*
         Docente d1 = new Docente();
-        Curso curs1 = new Curso();
+        Sistema_ev_Caf curs1 = new Sistema_ev_Caf();
         
-        curs1.setNombre("Cálculo");
+        curs1.set("Cálculo");
         d1.setNombre("Juan");
         d1.setApellido("Perez");
         d1.setId_cuenta("2500");
@@ -19,7 +20,7 @@ public class main {
         d1.setEns_curso(curs1);
         
         d1.mostrar();
-        
+        */
         // Fin de la prueba 1
     }
     
