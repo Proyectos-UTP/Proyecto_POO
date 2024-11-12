@@ -1,5 +1,8 @@
 package POO_Proy_Paquete;
 
+import java.awt.Color;
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -11,12 +14,14 @@ package POO_Proy_Paquete;
  * @author USUARIO
  */
 public class Logintrue extends javax.swing.JFrame {
-
+int mausex, mausey;
     /**
      * Creates new form Logintrue
      */
     public Logintrue() {
         initComponents();
+        USR.setBackground(new java.awt.Color(0,0,0,1));
+       contr.setBackground(new java.awt.Color(0,0,0,1));
     }
 
     /**
@@ -29,29 +34,115 @@ public class Logintrue extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        Head = new javax.swing.JPanel();
-        EXIT = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        USR = new javax.swing.JTextField();
+        BOTON = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        jSeparator2 = new javax.swing.JSeparator();
+        jLabel5 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
-        jLabel5 = new javax.swing.JLabel();
+        contr = new javax.swing.JPasswordField();
+        jSeparator2 = new javax.swing.JSeparator();
+        EXIT = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        Head = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocationByPlatform(true);
+        setUndecorated(true);
+        setResizable(false);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Head.setBackground(new java.awt.Color(156, 0, 1));
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/pngwing.com (6).png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 140, 430, 170));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/tesla-logo-png-2237.png"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, -10, 210, 260));
+
+        USR.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        USR.setForeground(new java.awt.Color(204, 204, 204));
+        USR.setText("INGRESE SU USUARIO");
+        USR.setBorder(null);
+        USR.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                USRMousePressed(evt);
+            }
+        });
+        USR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                USRActionPerformed(evt);
+            }
+        });
+        jPanel1.add(USR, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 230, 30));
+
+        BOTON.setBackground(new java.awt.Color(181, 8, 8));
+        BOTON.setFont(new java.awt.Font("Yu Gothic Medium", 1, 18)); // NOI18N
+        BOTON.setForeground(new java.awt.Color(255, 255, 255));
+        BOTON.setText("ENTRAR");
+        BOTON.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.black, java.awt.Color.black, java.awt.Color.black, java.awt.Color.black));
+        BOTON.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BOTON.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BOTONMouseClicked(evt);
+            }
+        });
+        jPanel1.add(BOTON, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 510, 110, 40));
+
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("INICIAR SESION");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 280, 196, 40));
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("USUARIO");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 330, 70, -1));
+
+        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("CONTRASEÑA");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 400, 110, 30));
+        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 470, 230, 10));
+
+        contr.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        contr.setForeground(new java.awt.Color(204, 204, 204));
+        contr.setText("********");
+        contr.setBorder(null);
+        contr.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                contrMousePressed(evt);
+            }
+        });
+        contr.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contrActionPerformed(evt);
+            }
+        });
+        jPanel1.add(contr, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 440, 230, 30));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 390, 230, 10));
 
         EXIT.setBackground(new java.awt.Color(156, 0, 1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("X");
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel2MouseExited(evt);
+            }
+        });
 
         javax.swing.GroupLayout EXITLayout = new javax.swing.GroupLayout(EXIT);
         EXIT.setLayout(EXITLayout);
@@ -68,51 +159,35 @@ public class Logintrue extends javax.swing.JFrame {
                 .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE))
         );
 
+        jPanel1.add(EXIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/Rojo.jpg"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, 570));
+
+        Head.setBackground(new java.awt.Color(156, 0, 1));
+        Head.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                HeadMouseDragged(evt);
+            }
+        });
+        Head.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                HeadMousePressed(evt);
+            }
+        });
+
         javax.swing.GroupLayout HeadLayout = new javax.swing.GroupLayout(Head);
         Head.setLayout(HeadLayout);
         HeadLayout.setHorizontalGroup(
             HeadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(HeadLayout.createSequentialGroup()
-                .addComponent(EXIT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 863, Short.MAX_VALUE))
+            .addGap(0, 900, Short.MAX_VALUE)
         );
         HeadLayout.setVerticalGroup(
             HeadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(HeadLayout.createSequentialGroup()
-                .addComponent(EXIT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 1, Short.MAX_VALUE))
+            .addGap(0, 30, Short.MAX_VALUE)
         );
 
         jPanel1.add(Head, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 30));
-
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/pngwing.com (6).png"))); // NOI18N
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 430, 170));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/tesla-logo-png-2237.png"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 10, 210, 260));
-
-        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("INICIAR SESION");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, 210, 40));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 480, 230, 10));
-
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("CONTRASEÑA");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 420, 110, 30));
-        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 410, 230, 10));
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("USUARIO");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 350, 100, 30));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/Rojo.jpg"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, 570));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -137,6 +212,78 @@ public class Logintrue extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void USRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_USRActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_USRActionPerformed
+
+    private void contrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contrActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_contrActionPerformed
+
+    private void USRMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_USRMousePressed
+        if(USR.getText().equals("INGRESE SU USUARIO")){
+        USR.setText("");
+        USR.setForeground(Color.WHITE);}
+        if(String.valueOf(contr.getPassword()).isEmpty()){
+                contr.setText("********");
+        contr.setForeground(Color.LIGHT_GRAY);}
+    }//GEN-LAST:event_USRMousePressed
+
+    private void contrMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_contrMousePressed
+        if(USR.getText().isEmpty()){
+        USR.setText("INGRESE SU USUARIO");
+        USR.setForeground(Color.LIGHT_GRAY);}
+        if(String.valueOf(contr.getPassword()).equals("********")){
+        contr.setText("");
+         contr.setForeground(Color.WHITE);}
+    }//GEN-LAST:event_contrMousePressed
+
+    private void HeadMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HeadMousePressed
+        mausex=evt.getX();
+        mausey=evt.getY();
+    }//GEN-LAST:event_HeadMousePressed
+
+    private void HeadMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HeadMouseDragged
+      int x=evt.getXOnScreen();
+              int y=evt.getYOnScreen();
+        this.setLocation(x-mausex, y-mausey);
+    }//GEN-LAST:event_HeadMouseDragged
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+      System.exit(0);
+    }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
+      EXIT.setBackground(Color.red);
+    }//GEN-LAST:event_jLabel2MouseEntered
+
+    private void jLabel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseExited
+        EXIT.setBackground(Head.getBackground());
+    }//GEN-LAST:event_jLabel2MouseExited
+
+    private void BOTONMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BOTONMouseClicked
+        String Usuario="X23212799";
+        String contraseña="GITHUB";
+                int f=3;
+                String Pass=new String(contr.getPassword());
+                 f=f-1;
+                    if(USR.getText().equals(Usuario)&&Pass.equals(contraseña)){
+                        App GN=new App();
+                        GN.setVisible(true);
+                        
+                    }else {
+                       
+                        JOptionPane.showMessageDialog(this, "USUARIO O CONTRASEÑA INCORRECTOS "
+                                );
+                        
+                    }
+                    
+                
+                if(f ==0 ){
+                    dispose();
+                }
+    }//GEN-LAST:event_BOTONMouseClicked
 
     /**
      * @param args the command line arguments
@@ -174,8 +321,11 @@ public class Logintrue extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BOTON;
     private javax.swing.JPanel EXIT;
     private javax.swing.JPanel Head;
+    private javax.swing.JTextField USR;
+    private javax.swing.JPasswordField contr;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
