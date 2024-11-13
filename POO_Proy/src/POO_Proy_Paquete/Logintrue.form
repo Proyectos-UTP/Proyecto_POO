@@ -64,8 +64,8 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="18" style="0"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/POO_Proy_Paquete/newpackage/pngwing.com (6).png"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new javax.swing.ImageIcon(System.getProperty(&quot;user.dir&quot;) + &quot;/src/POO_Proy_Paquete_img/pngwing.com-(6).png&quot;)" type="code"/>
             </Property>
           </Properties>
           <Constraints>
@@ -76,8 +76,8 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/POO_Proy_Paquete/newpackage/tesla-logo-png-2237.png"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new javax.swing.ImageIcon(System.getProperty(&quot;user.dir&quot;) + &quot;/src/POO_Proy_Paquete_img/tesla-logo-png-2237.png&quot;)" type="code"/>
             </Property>
           </Properties>
           <Constraints>
@@ -284,8 +284,8 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/POO_Proy_Paquete/newpackage/Rojo.jpg"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new javax.swing.ImageIcon(System.getProperty(&quot;user.dir&quot;) + &quot;/src/POO_Proy_Paquete_img/Rojo.jpg&quot;)" type="code"/>
             </Property>
           </Properties>
           <Constraints>
