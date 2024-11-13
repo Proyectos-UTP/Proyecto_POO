@@ -57,10 +57,10 @@ int mausex, mausey;
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/pngwing.com (6).png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir") + "/src/POO_Proy_Paquete_img/pngwing.com-(6).png"));
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 140, 430, 170));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/tesla-logo-png-2237.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir") + "/src/POO_Proy_Paquete_img/tesla-logo-png-2237.png"));
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, -10, 210, 260));
 
         USR.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -161,7 +161,7 @@ int mausex, mausey;
 
         jPanel1.add(EXIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/Rojo.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir") + "/src/POO_Proy_Paquete_img/Rojo.jpg"));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, 570));
 
         Head.setBackground(new java.awt.Color(156, 0, 1));
