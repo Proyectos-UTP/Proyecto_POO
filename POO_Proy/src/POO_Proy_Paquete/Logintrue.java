@@ -271,6 +271,7 @@ int mausex, mausey;
                     if(USR.getText().equals(Usuario)&&Pass.equals(contraseña)){
                         App GN=new App();
                         GN.setVisible(true);
+                        dispose();
                         
                     }else {
                        
