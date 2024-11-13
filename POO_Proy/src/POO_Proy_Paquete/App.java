@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package POO_Proy_Paquete;
 
+package POO_Proy_Paquete;
+import POO_Proy_Paquete.Main_inicial;
 /**
  *
  * @author USUARIO
@@ -13,6 +14,7 @@ public class App extends javax.swing.JFrame {
     /**
      * Creates new form App
      */
+
     public App() {
         initComponents();
     }
@@ -28,11 +30,11 @@ public class App extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
         jPanel2 = new javax.swing.JPanel();
         jSeparator4 = new javax.swing.JSeparator();
@@ -51,8 +53,11 @@ public class App extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/Nexon (1).png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir") + "/src/POO_Proy_Paquete_img/Nexon-(1).png"));
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 500, 130, 50));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir") + "/src/POO_Proy_Paquete_img/usuario-de-perfil (2).png"));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 200, 210));
 
         jLabel5.setFont(new java.awt.Font("Sitka Subheading", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -64,16 +69,12 @@ public class App extends javax.swing.JFrame {
         jLabel4.setText("NOMBRE Y APELLIDO");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 210, 50));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/usuario-de-perfil (2).png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 200, 210));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/Rojo.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 270, 610));
-
         jLabel6.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
         jLabel6.setText("Cursos asiganados");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir") + "/src/POO_Proy_Paquete_img/Rojo.jpg"));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 270, 610));
 
         jSeparator3.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, 670, 20));
@@ -81,7 +82,7 @@ public class App extends javax.swing.JFrame {
         jSeparator4.setBackground(new java.awt.Color(204, 204, 204));
         jSeparator4.setForeground(new java.awt.Color(51, 51, 51));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/imagen_2024-09-25_185537005.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir") + "/src/POO_Proy_Paquete_img/imagen_2024-09-25_185537005.png"));
 
         jLabel9.setText(" MECANICA CLASICA  (213452)");
 
@@ -112,19 +113,28 @@ public class App extends javax.swing.JFrame {
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 230, 250, 210));
 
         jLabel11.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/pngwing.com (8) (1).png"))); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir") + "/src/POO_Proy_Paquete_img/pngwing.com-(8)-(1).png"));
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 10, 190, 180));
 
         jLabel12.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
         jLabel12.setText("2024-CICLO 2  AGOSTO ");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, -1, 20));
 
+        jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel3MouseEntered(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jPanel3MouseReleased(evt);
+            }
+        });
+
         jSeparator5.setBackground(new java.awt.Color(204, 204, 204));
         jSeparator5.setForeground(new java.awt.Color(51, 51, 51));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/POO_Proy_Paquete/newpackage/1366x768-172001747-logo-de-matemáticas-con-calculadora-brújulas-fórmula-educación-stem-ciencia-tecnología (1).jpg"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir") + "/src/POO_Proy_Paquete_img/1366x768-172001747-logo-de-matemáticas-con-calculadora-brújulas-fórmula-educación-stem-ciencia-tecnología (1).jpg"));
 
-        jLabel13.setText("MATEMATICA PARA INGENIEROS 2 (21243)");
+        jLabel13.setText("CÁLCULO 2 (21243)");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -155,6 +165,17 @@ public class App extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jPanel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel3MouseEntered
+
+    private void jPanel3MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseReleased
+                        
+                        CalculadorNotas CN = new CalculadorNotas();
+                        CN.setVisible(true);
+                        dispose();
+    }//GEN-LAST:event_jPanel3MouseReleased
 
     /**
      * @param args the command line arguments

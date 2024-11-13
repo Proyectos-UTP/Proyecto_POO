@@ -1,5 +1,5 @@
 package POO_Proy_Paquete;
-public class Sistema_ev_Mate2 {
+public abstract class Sistema_ev_Mate2 {
     //atributos
     private int pc1;
     private int pc2;
@@ -7,6 +7,8 @@ public class Sistema_ev_Mate2 {
     private int exp;
     private int exf;
     //constructor
+    public Sistema_ev_Mate2(){}
+    
     public Sistema_ev_Mate2(int pc1, int pc2, int pc3, int exp, int exf) {
         this.pc1 = pc1;
         this.pc2 = pc2;

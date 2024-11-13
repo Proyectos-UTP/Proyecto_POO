@@ -17,8 +17,8 @@ public class CursosMain {
         System.out.println("\n-------------------------------");
         System.out.println("Reporte del curso Matematicas 2");
         System.out.println("-------------------------------");
-        System.out.println(cursoMate2.reporte_curso());
-        System.out.println(cursoMate2.reporte_notas());
+        /*System.out.println(cursoMate2.reporte_curso());
+        System.out.println(cursoMate2.reporte_notas());*/
         
         // Ingreso de notas del curso Ciudadania
         System.out.println("Ingrese las notas del curso de Ciudadania:");
