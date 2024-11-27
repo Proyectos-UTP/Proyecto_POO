@@ -31,13 +31,7 @@ public class Docente extends Usuario implements login_attempts{
     return codigo;
     }
 
-            @Override
-    public int cantint(int ca) {
-        int f = ca;
         
         
-        return 1;
     }
-        
-
-}
+       
