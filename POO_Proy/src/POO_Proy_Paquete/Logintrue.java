@@ -230,7 +230,7 @@ int mausex, mausey;
         USR.setText("");
         USR.setForeground(Color.WHITE);}
         if(String.valueOf(contr.getPassword()).isEmpty()){
-                contr.setText(t_hpass);
+                contr.setText(t_hp);
         contr.setForeground(Color.LIGHT_GRAY);}
     }//GEN-LAST:event_USRMousePressed
 
@@ -238,7 +238,7 @@ int mausex, mausey;
         if(USR.getText().isEmpty()){
         USR.setText(t_in);
         USR.setForeground(Color.LIGHT_GRAY);}
-        if(String.valueOf(contr.getPassword()).equals(t_hpass)){
+        if(String.valueOf(contr.getPassword()).equals(t_hp)){
         contr.setText("");
          contr.setForeground(Color.WHITE);}
     }//GEN-LAST:event_contrMousePressed
