@@ -43,4 +43,4 @@ public class Docente extends Usuario implements login_attempts{
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
-       
+}
