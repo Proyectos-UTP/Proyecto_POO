@@ -270,25 +270,36 @@ int mausex, mausey;
 
                 String Pass = new String(contr.getPassword());
                 
-                 if (zero = false){
+                 if (zero == false){
+                     
                     if(USR.getText().equals(idD1)&&Pass.equals(passD1)){
                         App GN = new App();
                         GN.setVisible(true);
                         dispose();
                         
-                    }else {
+                    }else if (USR.getText().equals(t_empty)||Pass.equals(t_empty)||USR.getText().equals(t_in)||Pass.equals(t_hp))
+                    {
+                     JOptionPane.showMessageDialog(this, t_nodata
+                                );
+                        cant_at = cant_at - 1;
+                    }
+                    else
+                    {
                        
                         JOptionPane.showMessageDialog(this, t_err
                                 );
-                        cant_at = cant_at-1;
+                        cant_at = cant_at - 1;
                         
                     }}
+                 
                  else if (zero == true){
                  {JOptionPane.showMessageDialog(this, t_z_att);
+                 dispose();
                  }
+
+                }
                     if(cant_at <= 0 ){
                     zero = true;}
-                }
     }//GEN-LAST:event_BOTONMouseClicked
 
     /**

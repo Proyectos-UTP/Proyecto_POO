@@ -203,7 +203,7 @@ public class CalculadorNotas extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-      Cuenta alumno = new Cuenta();
+    /*  Cuenta alumno = new Cuenta();
       CursoMat Mat2 = new CursoMat();
       
       alumno.setNombre(this.Nombre.getText());
@@ -225,7 +225,7 @@ public class CalculadorNotas extends javax.swing.JFrame {
 
                    fila[6]=Mat2.getExf();
                     fila[7]=Mat2.promedio();
-                    modelo.addRow(fila);
+                    modelo.addRow(fila);*/
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void ApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ApellidoActionPerformed
