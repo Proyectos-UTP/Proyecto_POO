@@ -9,6 +9,11 @@ public abstract class Clase_general {
     private int exfin;
     private int idseccion;
 
+    public float promedio(){
+    return (pc1+pc2+pc3+exfin)/4;
+    }
+    
+    
     public String getNombre() {
         return nombre;
     }
