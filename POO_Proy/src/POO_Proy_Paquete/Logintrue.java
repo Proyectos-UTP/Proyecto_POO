@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  *
  * @author USUARIO
  */
-public class Logintrue extends javax.swing.JFrame implements textos, login_attempts, Docente_credenciales {
+public class Logintrue extends javax.swing.JFrame implements textos, login_attempts, Credenciales {
 int cant_at = pass_attempts;
 boolean zero = z_att;
 int mausex, mausey;
@@ -280,24 +280,30 @@ int mausex, mausey;
                     case 1237:
                     switch (USR.getText())
                     {
+                        //primer docente
                         case idD1:
                         if (Pass.equals(passD1)){
                         App GN = new App();
+                        GN.darn_y_app1();
                         GN.setVisible(true);
                         dispose();
                         }
                         ;break;
+                        //segundo docente
                         case idD2:
                         if (Pass.equals(passD2))
                         {
-                        //aquí tendría que ir la ventana para el segundo docente
                         App GN = new App();
+                        GN.darn_y_app2();
                         GN.setVisible(true);
                         dispose();
                         }
+                        ;break;
+                        //comprobación cuando no hay texto
                         case t_empty, t_in, t_hp:
                         JOptionPane.showMessageDialog(this, t_nodata);
                         break;
+                        //datos incorrectos
                         default:
                         JOptionPane.showMessageDialog(this, t_err);
                         cant_at = cant_at - 1;

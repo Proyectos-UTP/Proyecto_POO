@@ -9,7 +9,7 @@ import POO_Proy_Paquete.Main_inicial;
  *
  * @author USUARIO
  */
-public class App extends javax.swing.JFrame {
+public class App extends javax.swing.JFrame implements Credenciales {
 
     /**
      * Creates new form App
@@ -17,6 +17,15 @@ public class App extends javax.swing.JFrame {
 
     public App() {
         initComponents();
+    }
+    
+    public void darn_y_app1()
+    {
+    jLabel4.setText(nD1 + "" + appD1);
+    }
+    public void darn_y_app2()
+    {
+    jLabel4.setText(nD2 + "" + appD2);
     }
 
     /**
