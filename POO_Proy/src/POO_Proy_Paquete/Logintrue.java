@@ -287,7 +287,7 @@ int mausex, mausey;
                  {JOptionPane.showMessageDialog(this, t_z_att);
                  }
                     if(cant_at <= 0 ){
-                    zero = true;
+                    zero = true;}
                 }
     }//GEN-LAST:event_BOTONMouseClicked
 
