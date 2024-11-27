@@ -9,9 +9,7 @@ public class Main_inicial {
         //Cs.nombre_curso1 = "Matemática para ingeniería 2";
        // Cs.nombre_curso2 = "Mecánica Clásica";
         
-        
-        
-        
-    }
+
     
+}
 }

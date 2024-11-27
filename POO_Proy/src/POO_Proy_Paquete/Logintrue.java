@@ -13,7 +13,9 @@ import javax.swing.JOptionPane;
  *
  * @author USUARIO
  */
-public class Logintrue extends javax.swing.JFrame {
+public class Logintrue extends javax.swing.JFrame implements textos, login_attempts, Docente_credenciales {
+int cant_at = pass_attempts;
+boolean zero = z_att;
 int mausex, mausey;
     /**
      * Creates new form Logintrue
@@ -23,6 +25,8 @@ int mausex, mausey;
         USR.setBackground(new java.awt.Color(0,0,0,1));
        contr.setBackground(new java.awt.Color(0,0,0,1));
     }
+    
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -222,19 +226,19 @@ int mausex, mausey;
     }//GEN-LAST:event_contrActionPerformed
 
     private void USRMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_USRMousePressed
-        if(USR.getText().equals("INGRESE SU USUARIO")){
+        if(USR.getText().equals(t_in)){
         USR.setText("");
         USR.setForeground(Color.WHITE);}
         if(String.valueOf(contr.getPassword()).isEmpty()){
-                contr.setText("********");
+                contr.setText(t_hpass);
         contr.setForeground(Color.LIGHT_GRAY);}
     }//GEN-LAST:event_USRMousePressed
 
     private void contrMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_contrMousePressed
         if(USR.getText().isEmpty()){
-        USR.setText("INGRESE SU USUARIO");
+        USR.setText(t_in);
         USR.setForeground(Color.LIGHT_GRAY);}
-        if(String.valueOf(contr.getPassword()).equals("********")){
+        if(String.valueOf(contr.getPassword()).equals(t_hpass)){
         contr.setText("");
          contr.setForeground(Color.WHITE);}
     }//GEN-LAST:event_contrMousePressed
@@ -263,33 +267,34 @@ int mausex, mausey;
     }//GEN-LAST:event_jLabel2MouseExited
 
     private void BOTONMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BOTONMouseClicked
-        String Usuario="X23212799";
-        String contraseña="GITHUB";
-                int f=3;
-                String Pass=new String(contr.getPassword());
-                 f=f-1;
-                    if(USR.getText().equals(Usuario)&&Pass.equals(contraseña)){
-                        App GN=new App();
+
+                String Pass = new String(contr.getPassword());
+                
+                 if (zero = false){
+                    if(USR.getText().equals(idD1)&&Pass.equals(passD1)){
+                        App GN = new App();
                         GN.setVisible(true);
                         dispose();
                         
                     }else {
                        
-                        JOptionPane.showMessageDialog(this, "USUARIO O CONTRASEÑA INCORRECTOS "
+                        JOptionPane.showMessageDialog(this, t_err
                                 );
+                        cant_at = cant_at-1;
                         
-                    }
-                    
-                
-                if(f ==0 ){
-                    dispose();
+                    }}
+                 else if (zero == true){
+                 {JOptionPane.showMessageDialog(this, t_z_att);
+                 }
+                    if(cant_at <= 0 ){
+                    zero = true;
                 }
     }//GEN-LAST:event_BOTONMouseClicked
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.

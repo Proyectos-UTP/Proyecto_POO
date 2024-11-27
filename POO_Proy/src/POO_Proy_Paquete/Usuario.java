@@ -1,5 +1,5 @@
 package POO_Proy_Paquete;
-public abstract class Usuario {
+public abstract class Usuario extends Cuenta {
     protected String nombre;
     protected String apellido;
 

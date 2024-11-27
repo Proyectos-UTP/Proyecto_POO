@@ -1,8 +1,9 @@
 
 package POO_Proy_Paquete;
 
-public class Docente extends Cuenta {
+public class Docente extends Usuario implements login_attempts{
     private CursoCaf ens_curso;
+    private String codigo;
     
     /* Esta clase fue creada para asociar un docente con un curso, pero debido a como las clases de los cursos estan hechas, esto ya no es posible, por lo menos no de la
     manera en la que se hacía antes
@@ -25,5 +26,18 @@ public class Docente extends Cuenta {
                 ens_curso.getNombre());
     }
     
-    
+        public String darcodigo(){
+        codigo = "D" + super.id_cuenta;
+    return codigo;
+    }
+
+            @Override
+    public int cantint(int ca) {
+        int f = ca;
+        
+        
+        return 1;
+    }
+        
+
 }
