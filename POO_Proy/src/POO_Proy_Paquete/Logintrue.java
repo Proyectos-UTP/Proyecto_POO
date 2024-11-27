@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  *
  * @author USUARIO
  */
-public class Logintrue extends javax.swing.JFrame{
+public class Logintrue extends javax.swing.JFrame implements textos, login_attempts, Docente_credenciales {
 int cant_at = pass_attempts;
 boolean zero = z_att;
 int mausex, mausey;
