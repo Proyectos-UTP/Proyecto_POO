@@ -281,7 +281,6 @@ int mausex, mausey;
                     {
                      JOptionPane.showMessageDialog(this, t_nodata
                                 );
-                        cant_at = cant_at - 1;
                     }
                     else
                     {
