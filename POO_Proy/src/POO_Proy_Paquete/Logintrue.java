@@ -269,9 +269,10 @@ int mausex, mausey;
     private void BOTONMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BOTONMouseClicked
 
                 String Pass = new String(contr.getPassword());
-                
-                 if (zero == false){
-                     
+                //use de Boolean.hashCode debido a que switch no permite usar boolean por sí solo; 1231 es true y 1237 es false.
+                switch (Boolean.hashCode(zero))
+                {
+                    case 1237:    
                     if(USR.getText().equals(idD1)&&Pass.equals(passD1)){
                         App GN = new App();
                         GN.setVisible(true);
@@ -289,15 +290,14 @@ int mausex, mausey;
                                 );
                         cant_at = cant_at - 1;
                         
-                    }}
-                 
-                 else if (zero == true){
-                 {JOptionPane.showMessageDialog(this, t_z_att);
-                 dispose();
-                 }
+                    }
+                    ;break; case 1231:
+                    {JOptionPane.showMessageDialog(this, t_z_att);
+                    dispose();
+                }
 
                 }
-                    if(cant_at <= 0 ){
+                    if(cant_at <= 1){
                     zero = true;}
     }//GEN-LAST:event_BOTONMouseClicked
 
