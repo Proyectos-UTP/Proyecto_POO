@@ -17,6 +17,9 @@ public class Logintrue extends javax.swing.JFrame implements textos, login_attem
 int cant_at = pass_attempts;
 boolean zero = z_att;
 int mausex, mausey;
+//creación de docentes
+
+
     /**
      * Creates new form Logintrue
      */
@@ -25,6 +28,8 @@ int mausex, mausey;
         USR.setBackground(new java.awt.Color(0,0,0,1));
        contr.setBackground(new java.awt.Color(0,0,0,1));
     }
+    
+    
     
 
 
@@ -272,26 +277,35 @@ int mausex, mausey;
                 //use de Boolean.hashCode debido a que switch no permite usar boolean por sí solo; 1231 es true y 1237 es false.
                 switch (Boolean.hashCode(zero))
                 {
-                    case 1237:    
-                    if(USR.getText().equals(idD1)&&Pass.equals(passD1)){
+                    case 1237:
+                    switch (USR.getText())
+                    {
+                        case idD1:
+                        if (Pass.equals(passD1)){
                         App GN = new App();
                         GN.setVisible(true);
                         dispose();
-                        
-                    }else if (USR.getText().equals(t_empty)||Pass.equals(t_empty)||USR.getText().equals(t_in)||Pass.equals(t_hp))
-                    {
-                     JOptionPane.showMessageDialog(this, t_nodata
-                                );
-                    }
-                    else
-                    {
-                       
-                        JOptionPane.showMessageDialog(this, t_err
-                                );
+                        }
+                        ;break;
+                        case idD2:
+                        if (Pass.equals(passD2))
+                        {
+                        //aquí tendría que ir la ventana para el segundo docente
+                        App GN = new App();
+                        GN.setVisible(true);
+                        dispose();
+                        }
+                        case t_empty, t_in, t_hp:
+                        JOptionPane.showMessageDialog(this, t_nodata);
+                        break;
+                        default:
+                        JOptionPane.showMessageDialog(this, t_err);
                         cant_at = cant_at - 1;
                         
                     }
-                    ;break; case 1231:
+                    ;break;
+                    
+                    case 1231:
                     {JOptionPane.showMessageDialog(this, t_z_att);
                     dispose();
                 }

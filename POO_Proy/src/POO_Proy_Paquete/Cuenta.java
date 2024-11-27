@@ -4,6 +4,12 @@ public abstract class Cuenta{
     protected String id_cuenta;
     protected String contraseña;
     
+    public Cuenta(String id, String pass)
+    {
+    this.id_cuenta = id;
+    this.contraseña = pass;
+    }
+    
     
     //Métodos get y set
     public String getId_cuenta() {
@@ -18,5 +24,6 @@ public abstract class Cuenta{
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
     }
+    
     
 }

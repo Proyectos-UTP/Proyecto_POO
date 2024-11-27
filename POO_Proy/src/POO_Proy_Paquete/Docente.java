@@ -9,9 +9,17 @@ public class Docente extends Usuario implements login_attempts{
     manera en la que se hacía antes
     */
     
-    public Docente(){
-        
+
+    
+    public Docente(String id, String pass, String n, String ap, String c){
+
+    super(id, pass, n, ap);
+    this.codigo = c;
+    
     }
+            
+    
+    
 /*
     public CursoCaf getEns_curso() {
         return ens_curso;
@@ -26,12 +34,13 @@ public class Docente extends Usuario implements login_attempts{
                 ens_curso.getNombre());
     }*/
     
-        public String darcodigo(){
-        codigo = "D" + super.id_cuenta;
-    return codigo;
+
+
+    public String getCodigo() {
+        return codigo;
     }
 
-        
-        
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
        
