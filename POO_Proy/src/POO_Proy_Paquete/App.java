@@ -414,15 +414,57 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     private void jp_curs2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jp_curs2MouseReleased
                                 
                         CalculadorNotas CN = new CalculadorNotas();
-                        switch (jl_curso2.getText())
+                        switch (jl_curso1.getText())
                         {
-                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); CN.setVisible(true); dispose(); break;
-                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); CN.setVisible(true); dispose(); break;
-                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); CN.setVisible(true); dispose(); break;
-                            case ciu + " " + "(" + secc4 + ")": CN.curs4(); CN.setVisible(true); dispose(); break;
-                            case POO + " " + "(" + secc5 + ")": CN.curs5(); CN.setVisible(true); dispose(); break;
-                            case Badatos + " " + "(" + secc6 + ")": CN.curs6(); CN.setVisible(true); dispose(); break;
-                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); CN.setVisible(true); dispose(); break;
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
                             case t_sincurso: JOptionPane.showMessageDialog(this, t_nocurso); break;
                         }
     }//GEN-LAST:event_jp_curs2MouseReleased
@@ -431,15 +473,57 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                                 
                                 
                         CalculadorNotas CN = new CalculadorNotas();
-                        switch (jl_curso4.getText())
+                        switch (jl_curso1.getText())
                         {
-                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); CN.setVisible(true); dispose(); break;
-                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); CN.setVisible(true); dispose(); break;
-                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); CN.setVisible(true); dispose(); break;
-                            case ciu + " " + "(" + secc4 + ")": CN.curs4(); CN.setVisible(true); dispose(); break;
-                            case POO + " " + "(" + secc5 + ")": CN.curs5(); CN.setVisible(true); dispose(); break;
-                            case Badatos + " " + "(" + secc6 + ")": CN.curs6(); CN.setVisible(true); dispose(); break;
-                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); CN.setVisible(true); dispose(); break;
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
                             case t_sincurso: JOptionPane.showMessageDialog(this, t_nocurso); break;
                         }
     }//GEN-LAST:event_jp_curs4MouseReleased
@@ -448,15 +532,57 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                                 
                                 
                         CalculadorNotas CN = new CalculadorNotas();
-                        switch (jl_curso5.getText())
+                        switch (jl_curso1.getText())
                         {
-                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); CN.setVisible(true); dispose(); break;
-                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); CN.setVisible(true); dispose(); break;
-                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); CN.setVisible(true); dispose(); break;
-                            case ciu + " " + "(" + secc4 + ")": CN.curs4(); CN.setVisible(true); dispose(); break;
-                            case POO + " " + "(" + secc5 + ")": CN.curs5(); CN.setVisible(true); dispose(); break;
-                            case Badatos + " " + "(" + secc6 + ")": CN.curs6(); CN.setVisible(true); dispose(); break;
-                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); CN.setVisible(true); dispose(); break;
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
                             case t_sincurso: JOptionPane.showMessageDialog(this, t_nocurso); break;
                         }
     }//GEN-LAST:event_jp_curs5MouseReleased
@@ -465,15 +591,57 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                                 
                                 
                         CalculadorNotas CN = new CalculadorNotas();
-                        switch (jl_curso3.getText())
+                        switch (jl_curso1.getText())
                         {
-                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); CN.setVisible(true); dispose(); break;
-                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); CN.setVisible(true); dispose(); break;
-                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); CN.setVisible(true); dispose(); break;
-                            case ciu + " " + "(" + secc4 + ")": CN.curs4(); CN.setVisible(true); dispose(); break;
-                            case POO + " " + "(" + secc5 + ")": CN.curs5(); CN.setVisible(true); dispose(); break;
-                            case Badatos + " " + "(" + secc6 + ")": CN.curs6(); CN.setVisible(true); dispose(); break;
-                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); CN.setVisible(true); dispose(); break;
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
                             case t_sincurso: JOptionPane.showMessageDialog(this, t_nocurso); break;
                         }
     }//GEN-LAST:event_jp_curs3MouseReleased
@@ -482,15 +650,57 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                                 
                                 
                         CalculadorNotas CN = new CalculadorNotas();
-                        switch (jl_curso6.getText())
+                         switch (jl_curso1.getText())
                         {
-                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); CN.setVisible(true); dispose(); break;
-                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); CN.setVisible(true); dispose(); break;
-                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); CN.setVisible(true); dispose(); break;
-                            case ciu + " " + "(" + secc4 + ")": CN.curs4(); CN.setVisible(true); dispose(); break;
-                            case POO + " " + "(" + secc5 + ")": CN.curs5(); CN.setVisible(true); dispose(); break;
-                            case Badatos + " " + "(" + secc6 + ")": CN.curs6(); CN.setVisible(true); dispose(); break;
-                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); CN.setVisible(true); dispose(); break;
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
                             case t_sincurso: JOptionPane.showMessageDialog(this, t_nocurso); break;
                         }
     }//GEN-LAST:event_jp_curs6MouseReleased

@@ -158,6 +158,9 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 volverMouseClicked(evt);
             }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                volverMouseReleased(evt);
+            }
         });
         volver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -202,8 +205,8 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
                         .addGap(42, 42, 42)
                         .addComponent(curs_n, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(jl_ndoc, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(11, 11, 11)
+                        .addComponent(jl_ndoc, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
@@ -341,10 +344,22 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
     }//GEN-LAST:event_volverActionPerformed
 
     private void volverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverMouseClicked
+
+    }//GEN-LAST:event_volverMouseClicked
+
+    private void volverMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverMouseReleased
         App AP=new  App();
+        switch(jl_ndoc.getText())
+        {
+            case nD1 + " " + appD1: AP.login_d1(); ;break;
+            case nD2 + " " + appD2: AP.login_d2(); ;break;
+        
+        }
+        
+        
         AP.setVisible(true);
         dispose();
-    }//GEN-LAST:event_volverMouseClicked
+    }//GEN-LAST:event_volverMouseReleased
 
     /**
      * @param args the command line arguments
