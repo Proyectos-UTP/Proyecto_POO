@@ -15,11 +15,8 @@ public abstract class Sistema_ev_general {
     this.exfin = efin;
     }
     
-    public float promedio(){
-    return (pc1+pc2+pc3+exfin)/4;
-    }
-    
-    
+    public abstract double promedio();
+
     public int getPc1() {
         return pc1;
     }
@@ -51,7 +48,7 @@ public abstract class Sistema_ev_general {
     public void setExfin(int exfin) {
         this.exfin = exfin;
     }
-
+    
     
     
     

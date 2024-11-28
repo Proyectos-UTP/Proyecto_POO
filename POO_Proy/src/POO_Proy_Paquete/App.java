@@ -37,14 +37,14 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     public void login_d2()
     {
     jLabel4.setText(nD2 + " " + appD2);
-    Curso_general c1 = new Curso_general(0, 0, 0, 0, POO, secc4);
-    Curso_general c2 = new Curso_general(0, 0, 0, 0, Badatos,secc5);
-    Curso_general c3 = new Curso_general(0, 0, 0, 0, TGS,secc6);
-    Curso_general c4 = new Curso_general(0, 0, 0, 0, ciu,secc7);
+    Curso_general c1 = new Curso_general(0, 0, 0, 0, POO, secc5);
+    Curso_general c2 = new Curso_general(0, 0, 0, 0, Badatos,secc6);
+    Curso_general c3 = new Curso_general(0, 0, 0, 0, TGS,secc7);
+    Curso_general c4 = new Curso_general(0, 0, 0, 0, ciu,secc4);
     jl_curso1.setText(c1.getNombre() + " " + "(" + c1.getIdseccion() + ")");
     jl_curso2.setText(c2.getNombre() + " " + "(" + c2.getIdseccion() + ")");
     jl_curso3.setText(c3.getNombre() + " " + "(" + c3.getIdseccion() + ")");
-    jl_curso4.setText(c3.getNombre() + " " + "(" + c3.getIdseccion() + ")");
+    jl_curso4.setText(c4.getNombre() + " " + "(" + c4.getIdseccion() + ")");
     
     }
 
