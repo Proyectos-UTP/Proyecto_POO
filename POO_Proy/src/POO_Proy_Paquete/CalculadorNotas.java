@@ -217,6 +217,12 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     
+        if(jTable1.getSelectionModel().isSelectionEmpty())
+        {
+            {JOptionPane.showMessageDialog(this, t_noselect);
+        
+        }
+        
         Curso_general curs = new Curso_general((Integer.parseInt(txtf_pc1.getText())), (Integer.parseInt(txtf_pc2.getText())), (Integer.parseInt(txtf_pc3.getText())), (Integer.parseInt(txtf_exmfin.getText())), "", "");
         int i = jTable1.getSelectedRow();
         modelo.setValueAt(curs.promedio(), i, 6);
