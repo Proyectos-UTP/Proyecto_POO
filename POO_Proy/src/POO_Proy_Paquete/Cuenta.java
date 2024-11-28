@@ -1,9 +1,14 @@
 package POO_Proy_Paquete;
-public class Cuenta extends Usuario{
+public abstract class Cuenta{
     //Atributos
     protected String id_cuenta;
     protected String contraseña;
-    protected char tipo_cuenta;
+    
+    public Cuenta(String id, String pass)
+    {
+    this.id_cuenta = id;
+    this.contraseña = pass;
+    }
     
     
     //Métodos get y set
@@ -19,5 +24,6 @@ public class Cuenta extends Usuario{
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
     }
+    
     
 }
