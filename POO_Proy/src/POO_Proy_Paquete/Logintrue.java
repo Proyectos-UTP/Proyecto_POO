@@ -8,7 +8,9 @@ import javax.swing.JOptionPane;
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
-
+//CalculadorNotas CN = new CalculadorNotas();
+    //CN.setVisible(true);
+    //dispose();
 /**
  *
  * @author USUARIO
