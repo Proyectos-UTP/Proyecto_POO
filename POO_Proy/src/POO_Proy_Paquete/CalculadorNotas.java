@@ -80,7 +80,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
 
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
+        jb_calc = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -112,10 +112,10 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         });
         jScrollPane1.setViewportView(jTable1);
 
-        jButton1.setText("Calcular");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jb_calc.setText("Calcular");
+        jb_calc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jb_calcActionPerformed(evt);
             }
         });
 
@@ -174,7 +174,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
                             .addComponent(txtf_pc2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jb_calc, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jb_upd, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
@@ -205,7 +205,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
                     .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jb_calc, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtf_exmfin, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtf_pc3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(19, 19, 19)
@@ -215,19 +215,22 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jb_calcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_calcActionPerformed
     
+        
         if(jTable1.getSelectionModel().isSelectionEmpty())
         {
             {JOptionPane.showMessageDialog(this, t_noselect);
         
-        }
-        
-        Curso_general curs = new Curso_general((Integer.parseInt(txtf_pc1.getText())), (Integer.parseInt(txtf_pc2.getText())), (Integer.parseInt(txtf_pc3.getText())), (Integer.parseInt(txtf_exmfin.getText())), "", "");
+        } 
         int i = jTable1.getSelectedRow();
+        Curso_general curs = new Curso_general((int)jTable1.getModel().getValueAt(i, 2), (int)jTable1.getModel().getValueAt(i, 3), (int)jTable1.getModel().getValueAt(i, 4), (int)jTable1.getModel().getValueAt(i, 5), "", "");
+        curs.promedio();
+        System.out.println(curs.promedio());
+        
         modelo.setValueAt(curs.promedio(), i, 6);
         
-        ;
+        
         /*  Cuenta alumno = new Cuenta();
       CursoMat Mat2 = new CursoMat();
       
@@ -251,7 +254,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
                    fila[6]=Mat2.getExf();
                     fila[7]=Mat2.promedio();
                     modelo.addRow(fila);*/
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jb_calcActionPerformed
     }
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         
@@ -330,13 +333,13 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel curs_n;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JButton jb_calc;
     private javax.swing.JButton jb_upd;
     private javax.swing.JTextField txtf_exmfin;
     private javax.swing.JTextField txtf_pc1;

@@ -18,8 +18,10 @@ public class Curso_general extends Sistema_ev_general {
     
     //this.imagen = ImageIO.read(new File(n + ".png"));
     }
-
-    
+    @Override
+    public float promedio(){
+        int prom = (super.pc1 + super.pc2 + super.pc3 + super.exfin)/4;
+    return prom;}
     
     public String getNombre() {
         return nombre;
