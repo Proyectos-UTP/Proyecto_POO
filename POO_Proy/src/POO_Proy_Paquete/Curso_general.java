@@ -16,10 +16,15 @@ public class Curso_general extends Sistema_ev_general {
     this.nombre = n;
     this.idseccion = s;
     
+
     //this.imagen = ImageIO.read(new File(n + ".png"));
     }
 
-    
+    @Override
+    public double promedio() {
+       double prom = (super.getPc1() + super.getPc2() + super.getPc3() + super.getExfin())/4;
+        return prom;
+    }
     
     public String getNombre() {
         return nombre;
@@ -36,5 +41,7 @@ public class Curso_general extends Sistema_ev_general {
     public void setIdseccion(String idseccion) {
         this.idseccion = idseccion;
     }
+
+
     
 }
