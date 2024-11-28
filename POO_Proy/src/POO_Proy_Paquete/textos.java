@@ -9,7 +9,7 @@ interface textos {
     String t_empty = "";
     String t_nodata = "INGRESE SUS DATOS";
     String t_noselect = "No hay nada seleccionado";
-    
+    String t_nocurso = "El curso no existe";
     
     
 }

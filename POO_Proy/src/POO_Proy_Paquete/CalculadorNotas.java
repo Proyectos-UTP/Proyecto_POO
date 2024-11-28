@@ -16,6 +16,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
       Estudiante E1 = new Estudiante(idE1, passE1, nE1, appE1);
       int n[] = notasE1;
       
+      
       private void columnas(){
         
         
@@ -38,6 +39,35 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         columnas();
         filas();
     }
+    public void curs1()
+    {
+    curs_n.setText(cal2);
+    }
+    public void curs2()
+    {
+    curs_n.setText(mecc);
+    }
+    public void curs3()
+    {
+    curs_n.setText(Estinf);
+    }
+    public void curs4()
+    {
+    curs_n.setText(ciu);
+    }
+    public void curs5()
+    {
+    curs_n.setText(POO);
+    }
+    public void curs6()
+    {
+    curs_n.setText(Badatos);
+    }
+    public void curs7()
+    {
+    curs_n.setText(TGS);
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -60,6 +90,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         txtf_pc1 = new javax.swing.JTextField();
         txtf_exmfin = new javax.swing.JTextField();
         txtf_pc3 = new javax.swing.JTextField();
+        curs_n = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -108,7 +139,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
             }
         });
 
-        txtf_pc1.setText("1");
+        curs_n.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -127,8 +158,11 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
                                 .addComponent(jLabel4)))
                         .addGap(76, 76, 76)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel8)))
+                            .addComponent(jLabel8)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel5)
+                                .addGap(137, 137, 137)
+                                .addComponent(curs_n, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(34, 34, 34)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -149,10 +183,15 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(20, 20, 20)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel5)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(curs_n, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtf_pc2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -160,7 +199,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
                     .addGroup(layout.createSequentialGroup()
                         .addGap(26, 26, 26)
                         .addComponent(jb_upd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(jLabel6))
@@ -284,6 +323,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel curs_n;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

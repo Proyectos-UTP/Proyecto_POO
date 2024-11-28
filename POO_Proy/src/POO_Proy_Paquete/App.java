@@ -5,11 +5,13 @@
 
 package POO_Proy_Paquete;
 import POO_Proy_Paquete.Main_inicial;
+import static POO_Proy_Paquete.textos.t_nodata;
+import javax.swing.JOptionPane;
 /**
  *
  * @author USUARIO
  */
-public class App extends javax.swing.JFrame implements Credenciales, datos_cursos {
+public class App extends javax.swing.JFrame implements Credenciales, datos_cursos,textos {
 
     /**
      * Creates new form App
@@ -66,24 +68,24 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
         jSeparator3 = new javax.swing.JSeparator();
         jPanel2 = new javax.swing.JPanel();
         jSeparator4 = new javax.swing.JSeparator();
-        jLabel8 = new javax.swing.JLabel();
+        jp_curs4 = new javax.swing.JLabel();
         jl_curso4 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        jp_curs1 = new javax.swing.JPanel();
         jSeparator5 = new javax.swing.JSeparator();
         jLabel10 = new javax.swing.JLabel();
         jl_curso1 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
+        jp_curs5 = new javax.swing.JPanel();
         jSeparator2 = new javax.swing.JSeparator();
         jl_curso5 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
+        jp_curs2 = new javax.swing.JPanel();
         jSeparator6 = new javax.swing.JSeparator();
         jl_curso2 = new javax.swing.JLabel();
-        jPanel7 = new javax.swing.JPanel();
+        jp_curs3 = new javax.swing.JPanel();
         jSeparator7 = new javax.swing.JSeparator();
         jl_curso3 = new javax.swing.JLabel();
-        jPanel8 = new javax.swing.JPanel();
+        jp_curs6 = new javax.swing.JPanel();
         jSeparator8 = new javax.swing.JSeparator();
         jl_curso6 = new javax.swing.JLabel();
 
@@ -122,6 +124,12 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
         jSeparator4.setBackground(new java.awt.Color(204, 204, 204));
         jSeparator4.setForeground(new java.awt.Color(51, 51, 51));
 
+        jp_curs4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jp_curs4MouseReleased(evt);
+            }
+        });
+
         jl_curso4.setText("Sin curso");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -132,7 +140,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jl_curso4, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jp_curs4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jSeparator4, javax.swing.GroupLayout.DEFAULT_SIZE, 3, Short.MAX_VALUE))
         );
@@ -140,7 +148,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jp_curs4, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -160,12 +168,12 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
         jLabel12.setText("2024-CICLO 2  AGOSTO ");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, -1, 20));
 
-        jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
+        jp_curs1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel3MouseEntered(evt);
+                jp_curs1MouseEntered(evt);
             }
             public void mouseReleased(java.awt.event.MouseEvent evt) {
-                jPanel3MouseReleased(evt);
+                jp_curs1MouseReleased(evt);
             }
         });
 
@@ -174,23 +182,23 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
 
         jl_curso1.setText("Sin curso");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jp_curs1Layout = new javax.swing.GroupLayout(jp_curs1);
+        jp_curs1.setLayout(jp_curs1Layout);
+        jp_curs1Layout.setHorizontalGroup(
+            jp_curs1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator5, javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_curs1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(282, 282, 282))
-            .addGroup(jPanel3Layout.createSequentialGroup()
+            .addGroup(jp_curs1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jl_curso1, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+        jp_curs1Layout.setVerticalGroup(
+            jp_curs1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_curs1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -200,24 +208,30 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                 .addContainerGap())
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 210, 200, 170));
+        jPanel1.add(jp_curs1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 210, 200, 170));
+
+        jp_curs5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jp_curs5MouseReleased(evt);
+            }
+        });
 
         jl_curso5.setText("Sin curso");
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
+        javax.swing.GroupLayout jp_curs5Layout = new javax.swing.GroupLayout(jp_curs5);
+        jp_curs5.setLayout(jp_curs5Layout);
+        jp_curs5Layout.setHorizontalGroup(
+            jp_curs5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jp_curs5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jp_curs5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jl_curso5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jSeparator2, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+        jp_curs5Layout.setVerticalGroup(
+            jp_curs5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_curs5Layout.createSequentialGroup()
                 .addContainerGap(126, Short.MAX_VALUE)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -225,23 +239,29 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                 .addGap(7, 7, 7))
         );
 
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 390, 210, 170));
+        jPanel1.add(jp_curs5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 390, 210, 170));
+
+        jp_curs2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jp_curs2MouseReleased(evt);
+            }
+        });
 
         jl_curso2.setText("Sin curso");
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jp_curs2Layout = new javax.swing.GroupLayout(jp_curs2);
+        jp_curs2.setLayout(jp_curs2Layout);
+        jp_curs2Layout.setHorizontalGroup(
+            jp_curs2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator6, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
-            .addGroup(jPanel6Layout.createSequentialGroup()
+            .addGroup(jp_curs2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jl_curso2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+        jp_curs2Layout.setVerticalGroup(
+            jp_curs2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_curs2Layout.createSequentialGroup()
                 .addContainerGap(123, Short.MAX_VALUE)
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -249,23 +269,29 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                 .addGap(7, 7, 7))
         );
 
-        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, 210, 170));
+        jPanel1.add(jp_curs2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, 210, 170));
+
+        jp_curs3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jp_curs3MouseReleased(evt);
+            }
+        });
 
         jl_curso3.setText("Sin curso");
 
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jp_curs3Layout = new javax.swing.GroupLayout(jp_curs3);
+        jp_curs3.setLayout(jp_curs3Layout);
+        jp_curs3Layout.setHorizontalGroup(
+            jp_curs3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator7)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_curs3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jl_curso3, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+        jp_curs3Layout.setVerticalGroup(
+            jp_curs3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_curs3Layout.createSequentialGroup()
                 .addContainerGap(131, Short.MAX_VALUE)
                 .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -273,23 +299,29 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                 .addGap(7, 7, 7))
         );
 
-        jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 210, -1, -1));
+        jPanel1.add(jp_curs3, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 210, -1, -1));
+
+        jp_curs6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jp_curs6MouseReleased(evt);
+            }
+        });
 
         jl_curso6.setText("Sin curso");
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jp_curs6Layout = new javax.swing.GroupLayout(jp_curs6);
+        jp_curs6.setLayout(jp_curs6Layout);
+        jp_curs6Layout.setHorizontalGroup(
+            jp_curs6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator8)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_curs6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jl_curso6, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+        jp_curs6Layout.setVerticalGroup(
+            jp_curs6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jp_curs6Layout.createSequentialGroup()
                 .addContainerGap(131, Short.MAX_VALUE)
                 .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -297,23 +329,136 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                 .addGap(7, 7, 7))
         );
 
-        jPanel1.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 390, -1, -1));
+        jPanel1.add(jp_curs6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 390, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 930, 590));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jPanel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseEntered
+    private void jp_curs1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jp_curs1MouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_jPanel3MouseEntered
+    }//GEN-LAST:event_jp_curs1MouseEntered
 
-    private void jPanel3MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseReleased
+    private void jp_curs1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jp_curs1MouseReleased
                         
                         CalculadorNotas CN = new CalculadorNotas();
                         CN.setVisible(true);
+                        switch (jl_curso1.getText())
+                        {
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4();break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5();break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); break;
+                            default: JOptionPane.showMessageDialog(this, t_nocurso);
+                        }
+                        
+                        
                         dispose();
-    }//GEN-LAST:event_jPanel3MouseReleased
+    }//GEN-LAST:event_jp_curs1MouseReleased
+
+    private void jp_curs2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jp_curs2MouseReleased
+                                
+                        CalculadorNotas CN = new CalculadorNotas();
+                        CN.setVisible(true);
+                        switch (jl_curso2.getText())
+                        {
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4();break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5();break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); break;
+                            default: JOptionPane.showMessageDialog(this, t_nocurso);
+                        }
+                        
+                        
+                        dispose();
+    }//GEN-LAST:event_jp_curs2MouseReleased
+
+    private void jp_curs4MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jp_curs4MouseReleased
+                                
+                        CalculadorNotas CN = new CalculadorNotas();
+                        CN.setVisible(true);
+                        switch (jl_curso4.getText())
+                        {
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4();break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5();break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); break;
+                            default: JOptionPane.showMessageDialog(this, t_nocurso);
+                        }
+                        
+                        
+                        dispose();
+    }//GEN-LAST:event_jp_curs4MouseReleased
+
+    private void jp_curs5MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jp_curs5MouseReleased
+                                
+                        CalculadorNotas CN = new CalculadorNotas();
+                        CN.setVisible(true);
+                        switch (jl_curso5.getText())
+                        {
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4();break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5();break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); break;
+                            default: JOptionPane.showMessageDialog(this, t_nocurso);
+                        }
+                        
+                        
+                        dispose();
+    }//GEN-LAST:event_jp_curs5MouseReleased
+
+    private void jp_curs3MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jp_curs3MouseReleased
+                                
+                        CalculadorNotas CN = new CalculadorNotas();
+                        CN.setVisible(true);
+                        switch (jl_curso3.getText())
+                        {
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4();break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5();break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); break;
+                            default: JOptionPane.showMessageDialog(this, t_nocurso);
+                        }
+                        
+                        
+                        dispose();
+    }//GEN-LAST:event_jp_curs3MouseReleased
+
+    private void jp_curs6MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jp_curs6MouseReleased
+                                
+                        CalculadorNotas CN = new CalculadorNotas();
+                        CN.setVisible(true);
+                        switch (jl_curso6.getText())
+                        {
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4();break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5();break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); break;
+                            default: JOptionPane.showMessageDialog(this, t_nocurso);
+                        }
+                        
+                        
+                        dispose();
+    }//GEN-LAST:event_jp_curs6MouseReleased
 
     /**
      * @param args the command line arguments
@@ -360,14 +505,8 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
@@ -381,5 +520,11 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     private javax.swing.JLabel jl_curso4;
     private javax.swing.JLabel jl_curso5;
     private javax.swing.JLabel jl_curso6;
+    private javax.swing.JPanel jp_curs1;
+    private javax.swing.JPanel jp_curs2;
+    private javax.swing.JPanel jp_curs3;
+    private javax.swing.JLabel jp_curs4;
+    private javax.swing.JPanel jp_curs5;
+    private javax.swing.JPanel jp_curs6;
     // End of variables declaration//GEN-END:variables
 }
