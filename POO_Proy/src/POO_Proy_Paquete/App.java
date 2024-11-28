@@ -23,7 +23,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     
     public void login_d1()
     {
-    jLabel4.setText(nD1 + " " + appD1);
+    jl_n_doc.setText(nD1 + " " + appD1);
     Curso_general c1 = new Curso_general(0, 0, 0, 0, cal2, secc1);
     Curso_general c2 = new Curso_general(0, 0, 0, 0, mecc,secc2);
     Curso_general c3 = new Curso_general(0, 0, 0, 0, Estinf,secc3);
@@ -36,7 +36,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     
     public void login_d2()
     {
-    jLabel4.setText(nD2 + " " + appD2);
+    jl_n_doc.setText(nD2 + " " + appD2);
     Curso_general c1 = new Curso_general(0, 0, 0, 0, POO, secc5);
     Curso_general c2 = new Curso_general(0, 0, 0, 0, Badatos,secc6);
     Curso_general c3 = new Curso_general(0, 0, 0, 0, TGS,secc7);
@@ -61,8 +61,8 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
         ayuda = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jl_n = new javax.swing.JLabel();
+        jl_n_doc = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
@@ -114,15 +114,15 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
         jLabel2.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir") + "/src/POO_Proy_Paquete_img/usuario-de-perfil (2).png"));
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 200, 210));
 
-        jLabel5.setFont(new java.awt.Font("Sitka Subheading", 1, 20)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Mallqui Chinchay Ruben");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 270, 50));
+        jl_n.setFont(new java.awt.Font("Sitka Subheading", 1, 20)); // NOI18N
+        jl_n.setForeground(new java.awt.Color(255, 255, 255));
+        jl_n.setText("Mallqui Chinchay Ruben");
+        jPanel1.add(jl_n, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 270, 50));
 
-        jLabel4.setFont(new java.awt.Font("Sitka Subheading", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("NOMBRE Y APELLIDO");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 210, 50));
+        jl_n_doc.setFont(new java.awt.Font("Sitka Subheading", 1, 18)); // NOI18N
+        jl_n_doc.setForeground(new java.awt.Color(255, 255, 255));
+        jl_n_doc.setText("NOMBRE Y APELLIDO");
+        jPanel1.add(jl_n_doc, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 210, 50));
 
         jLabel6.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
         jLabel6.setText("Cursos asiganados");
@@ -358,13 +358,55 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                         CalculadorNotas CN = new CalculadorNotas();
                         switch (jl_curso1.getText())
                         {
-                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); CN.setVisible(true); dispose(); break;
-                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); CN.setVisible(true); dispose(); break;
-                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); CN.setVisible(true); dispose(); break;
-                            case ciu + " " + "(" + secc4 + ")": CN.curs4(); CN.setVisible(true); dispose(); break;
-                            case POO + " " + "(" + secc5 + ")": CN.curs5(); CN.setVisible(true); dispose(); break;
-                            case Badatos + " " + "(" + secc6 + ")": CN.curs6(); CN.setVisible(true); dispose(); break;
-                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); CN.setVisible(true); dispose(); break;
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7();
+                            switch(jl_n_doc.getText())
+                            {
+                                case nD1 + " " + appD1: CN.doc1(); break;
+                                case nD2 + " " + appD2: CN.doc2(); break;
+                            }
+                            CN.setVisible(true); dispose(); break;
                             case t_sincurso: JOptionPane.showMessageDialog(this, t_nocurso); break;
                         }
     }//GEN-LAST:event_jp_curs1MouseReleased
@@ -505,8 +547,6 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -523,6 +563,8 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     private javax.swing.JLabel jl_curso4;
     private javax.swing.JLabel jl_curso5;
     private javax.swing.JLabel jl_curso6;
+    private javax.swing.JLabel jl_n;
+    private javax.swing.JLabel jl_n_doc;
     private javax.swing.JPanel jp_curs1;
     private javax.swing.JPanel jp_curs2;
     private javax.swing.JPanel jp_curs3;
