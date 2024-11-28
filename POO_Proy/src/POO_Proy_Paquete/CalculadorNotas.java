@@ -250,6 +250,12 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         int i = jTable1.getSelectedRow();
         Curso_general curs = new Curso_general((int)jTable1.getModel().getValueAt(i,2), (int)jTable1.getModel().getValueAt(i, 3), (int)jTable1.getModel().getValueAt(i, 4), (int)jTable1.getModel().getValueAt(i, 5), "", "");
         modelo.setValueAt(curs.promedio(), i, 6);
+        System.out.println(curs.getPc1());
+        System.out.println(curs.getPc2());
+        System.out.println(curs.getPc3());
+        System.out.println(curs.getExfin());
+        System.out.println((int) curs.promedio());
+        curs = null;
         /*  Cuenta alumno = new Cuenta();
       CursoMat Mat2 = new CursoMat();
       
@@ -300,10 +306,10 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         }
         
         int i = jTable1.getSelectedRow();
-        modelo.setValueAt(txtf_pc1.getText(), i, 2);
-        modelo.setValueAt(txtf_pc2.getText(), i, 3);
-        modelo.setValueAt(txtf_pc3.getText(), i, 4);
-        modelo.setValueAt(txtf_exmfin.getText(), i, 5);
+        modelo.setValueAt(Integer.parseInt(txtf_pc1.getText()), i, 2);
+        modelo.setValueAt(Integer.parseInt(txtf_pc2.getText()), i, 3);
+        modelo.setValueAt(Integer.parseInt(txtf_pc3.getText()), i, 4);
+        modelo.setValueAt(Integer.parseInt(txtf_exmfin.getText()), i, 5);
            
             
             txtf_pc1.setText(txtf_pc1.getText());
