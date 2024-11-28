@@ -1,6 +1,8 @@
 
 package POO_Proy_Paquete;
 
+import java.util.ArrayList;
+
 interface datos_cursos {
     //nombres
     String cal2 = "Cálculo 2";
@@ -21,4 +23,6 @@ interface datos_cursos {
     String secc5 = "sección5";
     String secc6 = "sección6";
     String secc7 = "sección7";
+
+    int notasE1[] = {10,12,17,15};
 }

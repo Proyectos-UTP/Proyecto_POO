@@ -16,4 +16,8 @@ interface Credenciales {
     String appD1 = "Apellido_Docente1";
     String nD2 = "Nombre_Docente2";
     String appD2 = "Apellido_Docente2";
+    
+    //nombres y apellidos de estudiantes
+    String nE1 = "Nombre_Estudianet1";
+    String appE1 = "Apellido_Estudianet1";
 }

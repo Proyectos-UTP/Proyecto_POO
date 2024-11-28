@@ -8,6 +8,7 @@ import javax.imageio.ImageIO;
 public class Curso_general extends Sistema_ev_general {
     private String nombre;
     private String idseccion;
+
     //private Image imagen;
     public Curso_general(int e1, int e2, int e3, int efin, String n, String s)
     {
