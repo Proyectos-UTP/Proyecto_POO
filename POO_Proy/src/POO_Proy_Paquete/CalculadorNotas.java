@@ -252,7 +252,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
                     fila[7]=Mat2.promedio();
                     modelo.addRow(fila);*/
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    }
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         
         //Esto de aca se supone que debería hacer que los números en los textfields de este jtable se actualizen al seleccionar una fila
