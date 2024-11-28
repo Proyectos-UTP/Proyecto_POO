@@ -39,6 +39,15 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         columnas();
         filas();
     }
+    public void doc1()
+    {
+    jl_ndoc.setText(nD1 + " " + appD1);
+    }
+    
+    public void doc2(){
+    jl_ndoc.setText(nD2 + " " + appD2);
+    }
+    
     public void curs1()
     {
     curs_n.setText(cal2);
@@ -92,6 +101,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         txtf_pc3 = new javax.swing.JTextField();
         curs_n = new javax.swing.JLabel();
         volver = new javax.swing.JButton();
+        jl_ndoc = new java.awt.Label();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -141,11 +151,15 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         });
 
         curs_n.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        curs_n.setText("curso");
 
         volver.setText("VOLVER");
         volver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 volverMouseClicked(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                volverMouseReleased(evt);
             }
         });
         volver.addActionListener(new java.awt.event.ActionListener() {
@@ -154,11 +168,15 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
             }
         });
 
+        jl_ndoc.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jl_ndoc.setName(""); // NOI18N
+        jl_ndoc.setText("nombredocente");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 862, Short.MAX_VALUE)
+            .addComponent(jScrollPane1)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -172,10 +190,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
                         .addGap(76, 76, 76)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel8)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addGap(137, 137, 137)
-                                .addComponent(curs_n, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jLabel5)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(34, 34, 34)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -185,7 +200,14 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtf_exmfin, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtf_pc2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addComponent(curs_n, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(11, 11, 11)
+                        .addComponent(jl_ndoc, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jb_calc, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -201,28 +223,28 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel5)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(curs_n, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
+                        .addGap(20, 20, 20)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5))
+                        .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtf_pc2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtf_pc1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(volver, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jb_upd, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(20, 20, 20)
+                            .addComponent(jl_ndoc, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                            .addGap(26, 26, 26)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(volver, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jb_upd, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jLabel6))
+                    .addComponent(jLabel6)
+                    .addComponent(curs_n, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -311,11 +333,6 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         modelo.setValueAt(Integer.parseInt(txtf_pc3.getText()), i, 4);
         modelo.setValueAt(Integer.parseInt(txtf_exmfin.getText()), i, 5);
            
-            
-            txtf_pc1.setText(txtf_pc1.getText());
-            txtf_pc2.setText(txtf_pc2.getText());
-            txtf_pc3.setText(txtf_pc3.getText());
-            txtf_exmfin.setText(txtf_exmfin.getText());
     }//GEN-LAST:event_jb_updActionPerformed
 
     private void jb_updMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jb_updMouseReleased
@@ -327,10 +344,22 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
     }//GEN-LAST:event_volverActionPerformed
 
     private void volverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverMouseClicked
+
+    }//GEN-LAST:event_volverMouseClicked
+
+    private void volverMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverMouseReleased
         App AP=new  App();
+        switch(jl_ndoc.getText())
+        {
+            case nD1 + " " + appD1: AP.login_d1(); ;break;
+            case nD2 + " " + appD2: AP.login_d2(); ;break;
+        
+        }
+        
+        
         AP.setVisible(true);
         dispose();
-    }//GEN-LAST:event_volverMouseClicked
+    }//GEN-LAST:event_volverMouseReleased
 
     /**
      * @param args the command line arguments
@@ -377,6 +406,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
     private javax.swing.JTable jTable1;
     private javax.swing.JButton jb_calc;
     private javax.swing.JButton jb_upd;
+    private java.awt.Label jl_ndoc;
     private javax.swing.JTextField txtf_exmfin;
     private javax.swing.JTextField txtf_pc1;
     private javax.swing.JTextField txtf_pc2;
