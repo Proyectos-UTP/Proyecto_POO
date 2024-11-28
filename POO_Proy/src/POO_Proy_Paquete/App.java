@@ -58,6 +58,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        ayuda = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -94,15 +95,28 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        ayuda.setText("Ayuda");
+        ayuda.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ayudaMouseClicked(evt);
+            }
+        });
+        ayuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ayudaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ayuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 0, 100, 30));
+
         jLabel3.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir") + "/src/POO_Proy_Paquete_img/Nexon-(1).png"));
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 500, 130, 50));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir") + "/src/POO_Proy_Paquete_img/usuario-de-perfil (2).png"));
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 200, 210));
 
-        jLabel5.setFont(new java.awt.Font("Sitka Subheading", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Sitka Subheading", 1, 20)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("PERSONA DEL PERFIL");
+        jLabel5.setText("Mallqui Chinchay Ruben");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 270, 50));
 
         jLabel4.setFont(new java.awt.Font("Sitka Subheading", 1, 18)); // NOI18N
@@ -439,6 +453,15 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                         }
     }//GEN-LAST:event_jp_curs6MouseReleased
 
+    private void ayudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ayudaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ayudaActionPerformed
+
+    private void ayudaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ayudaMouseClicked
+        help hp=new help();
+        hp.setVisible(true);
+    }//GEN-LAST:event_ayudaMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -475,6 +498,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ayuda;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
