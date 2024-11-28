@@ -284,7 +284,7 @@ int mausex, mausey;
                         case idD1:
                         if (Pass.equals(passD1)){
                         App GN = new App();
-                        GN.darn_y_app1();
+                        GN.login_d1();
                         GN.setVisible(true);
                         dispose();
                         }
@@ -294,7 +294,7 @@ int mausex, mausey;
                         if (Pass.equals(passD2))
                         {
                         App GN = new App();
-                        GN.darn_y_app2();
+                        GN.login_d2();
                         GN.setVisible(true);
                         dispose();
                         }

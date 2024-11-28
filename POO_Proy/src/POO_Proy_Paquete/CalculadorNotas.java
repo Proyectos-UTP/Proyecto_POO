@@ -17,19 +17,23 @@ public class CalculadorNotas extends javax.swing.JFrame {
         
         
         
-        modelo.addColumn("Nombres");
+        modelo.addColumn("Nombre");
         modelo.addColumn("Apellido");
         modelo.addColumn("Pc1");
         modelo.addColumn("Pc2");
-        modelo.addColumn("Examenparc");
         modelo.addColumn("Pc3");
-         modelo.addColumn("Examenfi");
-          modelo.addColumn("Promedio");
+        modelo.addColumn("Examenfi");
+        modelo.addColumn("Promedio");
         this.jTable1.setModel(modelo);
     }
+      private void filas(){
+      modelo.addRow(new Object[]{"a","a","a","s","s","s", "s"});
+      }
+      
     public CalculadorNotas() {
         initComponents();
         columnas();
+        filas();
     }
 
     /**

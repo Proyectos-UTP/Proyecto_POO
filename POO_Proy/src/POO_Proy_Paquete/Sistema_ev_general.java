@@ -1,27 +1,25 @@
 
 package POO_Proy_Paquete;
 
-public abstract class Clase_general {
-    private String nombre;
+public abstract class Sistema_ev_general {
     private int pc1;
     private int pc2;
     private int pc3;
     private int exfin;
-    private int idseccion;
-
+    
+    public Sistema_ev_general(int e1, int e2, int e3, int efin)
+    {
+    this.pc1 = e1;
+    this.pc2 = e2;
+    this.pc3 = e3;
+    this.exfin = efin;
+    }
+    
     public float promedio(){
     return (pc1+pc2+pc3+exfin)/4;
     }
     
     
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public int getPc1() {
         return pc1;
     }
@@ -54,12 +52,7 @@ public abstract class Clase_general {
         this.exfin = exfin;
     }
 
-    public int getIdseccion() {
-        return idseccion;
-    }
-
-    public void setIdseccion(int idseccion) {
-        this.idseccion = idseccion;
-    }
+    
+    
     
 }
