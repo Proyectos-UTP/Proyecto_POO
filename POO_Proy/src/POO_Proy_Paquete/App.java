@@ -37,7 +37,6 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     public void login_d2()
     {
     jLabel4.setText(nD2 + " " + appD2);
-    jLabel4.setText(nD1 + "" + appD1);
     Curso_general c1 = new Curso_general(0, 0, 0, 0, POO, secc4);
     Curso_general c2 = new Curso_general(0, 0, 0, 0, Badatos,secc5);
     Curso_general c3 = new Curso_general(0, 0, 0, 0, TGS,secc6);
@@ -341,123 +340,103 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     }//GEN-LAST:event_jp_curs1MouseEntered
 
     private void jp_curs1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jp_curs1MouseReleased
-                        
+                                
                         CalculadorNotas CN = new CalculadorNotas();
-                        CN.setVisible(true);
                         switch (jl_curso1.getText())
                         {
-                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); break;
-                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); break;
-                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); break;
-                            case ciu + " " + "(" + secc4 + ")": CN.curs4();break;
-                            case POO + " " + "(" + secc5 + ")": CN.curs5();break;
-                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();break;
-                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); break;
-                            default: JOptionPane.showMessageDialog(this, t_nocurso);
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); CN.setVisible(true); dispose(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); CN.setVisible(true); dispose(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); CN.setVisible(true); dispose(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4(); CN.setVisible(true); dispose(); break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5(); CN.setVisible(true); dispose(); break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6(); CN.setVisible(true); dispose(); break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); CN.setVisible(true); dispose(); break;
+                            case t_sincurso: JOptionPane.showMessageDialog(this, t_nocurso); break;
                         }
-                        
-                        
-                        dispose();
     }//GEN-LAST:event_jp_curs1MouseReleased
 
     private void jp_curs2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jp_curs2MouseReleased
                                 
                         CalculadorNotas CN = new CalculadorNotas();
-                        CN.setVisible(true);
                         switch (jl_curso2.getText())
                         {
-                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); break;
-                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); break;
-                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); break;
-                            case ciu + " " + "(" + secc4 + ")": CN.curs4();break;
-                            case POO + " " + "(" + secc5 + ")": CN.curs5();break;
-                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();break;
-                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); break;
-                            default: JOptionPane.showMessageDialog(this, t_nocurso);
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); CN.setVisible(true); dispose(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); CN.setVisible(true); dispose(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); CN.setVisible(true); dispose(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4(); CN.setVisible(true); dispose(); break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5(); CN.setVisible(true); dispose(); break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6(); CN.setVisible(true); dispose(); break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); CN.setVisible(true); dispose(); break;
+                            case t_sincurso: JOptionPane.showMessageDialog(this, t_nocurso); break;
                         }
-                        
-                        
-                        dispose();
     }//GEN-LAST:event_jp_curs2MouseReleased
 
     private void jp_curs4MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jp_curs4MouseReleased
                                 
+                                
                         CalculadorNotas CN = new CalculadorNotas();
-                        CN.setVisible(true);
                         switch (jl_curso4.getText())
                         {
-                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); break;
-                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); break;
-                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); break;
-                            case ciu + " " + "(" + secc4 + ")": CN.curs4();break;
-                            case POO + " " + "(" + secc5 + ")": CN.curs5();break;
-                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();break;
-                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); break;
-                            default: JOptionPane.showMessageDialog(this, t_nocurso);
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); CN.setVisible(true); dispose(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); CN.setVisible(true); dispose(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); CN.setVisible(true); dispose(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4(); CN.setVisible(true); dispose(); break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5(); CN.setVisible(true); dispose(); break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6(); CN.setVisible(true); dispose(); break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); CN.setVisible(true); dispose(); break;
+                            case t_sincurso: JOptionPane.showMessageDialog(this, t_nocurso); break;
                         }
-                        
-                        
-                        dispose();
     }//GEN-LAST:event_jp_curs4MouseReleased
 
     private void jp_curs5MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jp_curs5MouseReleased
                                 
+                                
                         CalculadorNotas CN = new CalculadorNotas();
-                        CN.setVisible(true);
                         switch (jl_curso5.getText())
                         {
-                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); break;
-                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); break;
-                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); break;
-                            case ciu + " " + "(" + secc4 + ")": CN.curs4();break;
-                            case POO + " " + "(" + secc5 + ")": CN.curs5();break;
-                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();break;
-                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); break;
-                            default: JOptionPane.showMessageDialog(this, t_nocurso);
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); CN.setVisible(true); dispose(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); CN.setVisible(true); dispose(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); CN.setVisible(true); dispose(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4(); CN.setVisible(true); dispose(); break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5(); CN.setVisible(true); dispose(); break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6(); CN.setVisible(true); dispose(); break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); CN.setVisible(true); dispose(); break;
+                            case t_sincurso: JOptionPane.showMessageDialog(this, t_nocurso); break;
                         }
-                        
-                        
-                        dispose();
     }//GEN-LAST:event_jp_curs5MouseReleased
 
     private void jp_curs3MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jp_curs3MouseReleased
                                 
+                                
                         CalculadorNotas CN = new CalculadorNotas();
-                        CN.setVisible(true);
                         switch (jl_curso3.getText())
                         {
-                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); break;
-                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); break;
-                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); break;
-                            case ciu + " " + "(" + secc4 + ")": CN.curs4();break;
-                            case POO + " " + "(" + secc5 + ")": CN.curs5();break;
-                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();break;
-                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); break;
-                            default: JOptionPane.showMessageDialog(this, t_nocurso);
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); CN.setVisible(true); dispose(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); CN.setVisible(true); dispose(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); CN.setVisible(true); dispose(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4(); CN.setVisible(true); dispose(); break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5(); CN.setVisible(true); dispose(); break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6(); CN.setVisible(true); dispose(); break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); CN.setVisible(true); dispose(); break;
+                            case t_sincurso: JOptionPane.showMessageDialog(this, t_nocurso); break;
                         }
-                        
-                        
-                        dispose();
     }//GEN-LAST:event_jp_curs3MouseReleased
 
     private void jp_curs6MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jp_curs6MouseReleased
                                 
+                                
                         CalculadorNotas CN = new CalculadorNotas();
-                        CN.setVisible(true);
                         switch (jl_curso6.getText())
                         {
-                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); break;
-                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); break;
-                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); break;
-                            case ciu + " " + "(" + secc4 + ")": CN.curs4();break;
-                            case POO + " " + "(" + secc5 + ")": CN.curs5();break;
-                            case Badatos + " " + "(" + secc6 + ")": CN.curs6();break;
-                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); break;
-                            default: JOptionPane.showMessageDialog(this, t_nocurso);
+                            case cal2 + " " + "(" + secc1 + ")": CN.curs1(); CN.setVisible(true); dispose(); break;
+                            case mecc + " " + "(" + secc2 + ")": CN.curs2(); CN.setVisible(true); dispose(); break;
+                            case Estinf + " " + "(" + secc3 + ")": CN.curs3(); CN.setVisible(true); dispose(); break;
+                            case ciu + " " + "(" + secc4 + ")": CN.curs4(); CN.setVisible(true); dispose(); break;
+                            case POO + " " + "(" + secc5 + ")": CN.curs5(); CN.setVisible(true); dispose(); break;
+                            case Badatos + " " + "(" + secc6 + ")": CN.curs6(); CN.setVisible(true); dispose(); break;
+                            case TGS + " " + "(" + secc7 + ")": CN.curs7(); CN.setVisible(true); dispose(); break;
+                            case t_sincurso: JOptionPane.showMessageDialog(this, t_nocurso); break;
                         }
-                        
-                        
-                        dispose();
     }//GEN-LAST:event_jp_curs6MouseReleased
 
     /**
