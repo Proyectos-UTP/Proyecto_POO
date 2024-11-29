@@ -26,7 +26,7 @@ interface Credenciales {
     
     //nombres y apellidos de estudiantes
     String nE1 = "Fabian";
-    String appE1 = "MArroquin";
+    String appE1 = "Marroquin";
     String nE2 = "Jose";
     String appE2 = "Carhuacusma";
     String nE3 = "Angel";
