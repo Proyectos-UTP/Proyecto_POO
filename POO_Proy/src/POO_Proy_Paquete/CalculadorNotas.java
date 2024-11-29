@@ -4,6 +4,7 @@
  */
 package POO_Proy_Paquete;
 
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -14,7 +15,12 @@ import javax.swing.table.DefaultTableModel;
 public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,textos, datos_cursos {
       DefaultTableModel modelo = new DefaultTableModel();
       Estudiante E1 = new Estudiante(idE1, passE1, nE1, appE1);
-      int n[] = notasE1;
+      Estudiante E2 = new Estudiante(idE2, passE2, nE2, appE2);
+      Estudiante E3 = new Estudiante(idE3, passE3, nE3, appE3);
+      Estudiante E4 = new Estudiante(idE4, passE4, nE4, appE4);
+      Estudiante E5 = new Estudiante(idE5, passE5, nE5, appE5);
+      rng_notas_iniciales randnum = new rng_notas_iniciales();
+      
       
       
       private void columnas(){
@@ -31,7 +37,28 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         this.jTable1.setModel(modelo);
     }
       private void filas(){
-      modelo.addRow(new Object[]{E1.getNombre(),E1.getApellido(),n[0],n[1],n[2],n[3]});
+    ArrayList<Integer> notas1 = new ArrayList<Integer>();
+    for(int i = 0; i < 4; i++){
+    notas1.add(randnum.rng_());}
+    ArrayList<Integer> notas2 = new ArrayList<Integer>();
+    for(int i = 0; i < 4; i++){
+    notas2.add(randnum.rng_());}
+    ArrayList<Integer> notas3 = new ArrayList<Integer>();
+    for(int i = 0; i < 4; i++){
+    notas3.add(randnum.rng_());}
+    ArrayList<Integer> notas4 = new ArrayList<Integer>();
+    for(int i = 0; i < 4; i++){
+    notas4.add(randnum.rng_());}
+    ArrayList<Integer> notas5 = new ArrayList<Integer>();
+    for(int i = 0; i < 4; i++){
+    notas5.add(randnum.rng_());}
+    
+    modelo.addRow(new Object[]{E1.getNombre(),E1.getApellido(),notas1.get(0),notas1.get(1),notas1.get(2),notas1.get(3)});
+    modelo.addRow(new Object[]{E2.getNombre(),E2.getApellido(),notas2.get(0),notas2.get(1),notas2.get(2),notas2.get(3)});
+    modelo.addRow(new Object[]{E3.getNombre(),E3.getApellido(),notas3.get(0),notas3.get(1),notas3.get(2),notas3.get(3)});
+    modelo.addRow(new Object[]{E4.getNombre(),E4.getApellido(),notas4.get(0),notas4.get(1),notas4.get(2),notas4.get(3)});
+    modelo.addRow(new Object[]{E5.getNombre(),E5.getApellido(),notas5.get(0),notas5.get(1),notas5.get(2),notas5.get(3)});
+      
       }
       
     public CalculadorNotas() {
@@ -76,6 +103,10 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
     {
     curs_n.setText(TGS);
     }
+    public void j()
+    {
+        
+    }
     
 
     /**
@@ -102,6 +133,8 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         curs_n = new javax.swing.JLabel();
         volver = new javax.swing.JButton();
         jl_ndoc = new java.awt.Label();
+        label1 = new java.awt.Label();
+        label2 = new java.awt.Label();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -151,6 +184,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         });
 
         curs_n.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        curs_n.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         curs_n.setText("curso");
 
         volver.setText("VOLVER");
@@ -168,9 +202,16 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
             }
         });
 
+        jl_ndoc.setAlignment(java.awt.Label.CENTER);
         jl_ndoc.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jl_ndoc.setName(""); // NOI18N
         jl_ndoc.setText("nombredocente");
+
+        label1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        label1.setText("Nombres y apellido del docente");
+
+        label2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        label2.setText("Nombre del curso");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -202,12 +243,14 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
                             .addComponent(txtf_pc2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(curs_n, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(33, 33, 33)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jl_ndoc, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(curs_n, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(11, 11, 11)
-                        .addComponent(jl_ndoc, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
+                        .addGap(84, 84, 84)
+                        .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jb_calc, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -217,34 +260,41 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(volver, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(17, 17, 17))))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(358, 358, 358)
+                    .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(495, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5))
-                        .addGap(28, 28, 28)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtf_pc2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtf_pc1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(20, 20, 20)
-                            .addComponent(jl_ndoc, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addGap(26, 26, 26)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(volver, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jb_upd, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(26, 26, 26)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(volver, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jb_upd, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel4)
+                                .addComponent(jLabel5)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(txtf_pc2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtf_pc1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(jl_ndoc, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jLabel6)
-                    .addComponent(curs_n, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -253,9 +303,16 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
                             .addComponent(txtf_pc3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(24, 24, 24))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jb_calc, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jb_calc, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(curs_n, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(29, 29, 29)))
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(124, 124, 124)
+                    .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(507, Short.MAX_VALUE)))
         );
 
         pack();
@@ -272,49 +329,10 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         int i = jTable1.getSelectedRow();
         Curso_general curs = new Curso_general((int)jTable1.getModel().getValueAt(i,2), (int)jTable1.getModel().getValueAt(i, 3), (int)jTable1.getModel().getValueAt(i, 4), (int)jTable1.getModel().getValueAt(i, 5), "", "");
         modelo.setValueAt(curs.promedio(), i, 6);
-        System.out.println(curs.getPc1());
-        System.out.println(curs.getPc2());
-        System.out.println(curs.getPc3());
-        System.out.println(curs.getExfin());
-        System.out.println((int) curs.promedio());
-        curs = null;
-        /*  Cuenta alumno = new Cuenta();
-      CursoMat Mat2 = new CursoMat();
-      
-      alumno.setNombre(this.Nombre.getText());
-      alumno.setApellido(this.Apellido.getText());
-     Mat2.setPc1(Integer.parseInt(this.Pc1.getText()));
-     Mat2.setPc2(Integer.parseInt(this.Pc2.getText()));
-       Mat2.setPc3(Integer.parseInt(this.Pc3.getText()));
-            Mat2.setExp(Integer.parseInt(this.ExmParc.getText()));
-       Mat2.setExf(Integer.parseInt(this.ExmFin.getText()));
-      
-      
-      Object fila[]=new Object[8];
-              fila[0]=alumno.getNombre();
-               fila[1]=alumno.getApellido();
-               fila[2]=Mat2.getPc1();
-                fila[3]=Mat2.getPc2();
-                  fila[5]=Mat2.getExp();
-                 fila[4]=Mat2.getPc3();
-
-                   fila[6]=Mat2.getExf();
-                    fila[7]=Mat2.promedio();
-                    modelo.addRow(fila);*/
-        
     }//GEN-LAST:event_jb_calcActionPerformed
     
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
-        
-        //Esto de aca se supone que debería hacer que los números en los textfields de este jtable se actualizen al seleccionar una fila
-        /* if(jTable1.getSelectionModel().isSelectionEmpty())
-        {
-            int i = jTable1.getSelectedRow();
-            txtf_pc1.setText((String) modelo.getValueAt(i, 2));
-            txtf_pc2.setText((String) modelo.getValueAt(i, 3));
-            txtf_pc3.setText((String) modelo.getValueAt(i, 4));
-            txtf_exmfin.setText((String) modelo.getValueAt(i, 5));
-        }*/
+
     }//GEN-LAST:event_jTable1MouseClicked
 
     private void jb_updActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_updActionPerformed
@@ -355,8 +373,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
             case nD2 + " " + appD2: AP.login_d2(); ;break;
         
         }
-        
-        
+
         AP.setVisible(true);
         dispose();
     }//GEN-LAST:event_volverMouseReleased
@@ -407,6 +424,8 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
     private javax.swing.JButton jb_calc;
     private javax.swing.JButton jb_upd;
     private java.awt.Label jl_ndoc;
+    private java.awt.Label label1;
+    private java.awt.Label label2;
     private javax.swing.JTextField txtf_exmfin;
     private javax.swing.JTextField txtf_pc1;
     private javax.swing.JTextField txtf_pc2;

@@ -16,13 +16,11 @@ interface datos_cursos {
     String TGS = "Teoría general de sistemas";
     
     //secciones
-    String secc1 = "sección1";
-    String secc2 = "sección2";
-    String secc3 = "sección3";
-    String secc4 = "sección4";
-    String secc5 = "sección5";
-    String secc6 = "sección6";
-    String secc7 = "sección7";
-
-    int notasE1[] = {10,12,17,15};
+    String secc1 = "23556784";
+    String secc2 = "32689745";
+    String secc3 = "16790125";
+    String secc4 = "12648754";
+    String secc5 = "26408794";
+    String secc6 = "32647894";
+    String secc7 = "13204705";
 }

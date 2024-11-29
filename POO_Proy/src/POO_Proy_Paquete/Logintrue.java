@@ -303,7 +303,7 @@ int mausex, mausey;
                         case t_empty, t_in, t_hp:
                         JOptionPane.showMessageDialog(this, t_nodata);
                         break;
-                        //datos incorrectos
+                        //comprobación cuando los datos son incorrectos
                         default:
                         JOptionPane.showMessageDialog(this, t_err);
                         cant_at = cant_at - 1;

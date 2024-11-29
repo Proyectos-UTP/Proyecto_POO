@@ -1,10 +1,6 @@
 
 package POO_Proy_Paquete;
 
-import java.awt.image.BufferedImage;
-import java.io.File;
-import javax.imageio.ImageIO;
-
 public class Curso_general extends Sistema_ev_general {
     private String nombre;
     private String idseccion;
@@ -15,9 +11,6 @@ public class Curso_general extends Sistema_ev_general {
     super(e1,e2,e3,efin);
     this.nombre = n;
     this.idseccion = s;
-    
-
-    //this.imagen = ImageIO.read(new File(n + ".png"));
     }
 
     @Override

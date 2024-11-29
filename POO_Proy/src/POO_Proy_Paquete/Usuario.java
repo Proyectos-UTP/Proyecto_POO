@@ -9,6 +9,7 @@ public abstract class Usuario extends Cuenta {
     this.nombre = n;
     this.apellido = ap;
     }
+
     
     public String getNombre() {
         return nombre;
