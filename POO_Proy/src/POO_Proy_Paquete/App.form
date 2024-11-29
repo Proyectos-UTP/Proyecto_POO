@@ -87,7 +87,8 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="NOMBRES Y APELLIDO"/>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Bienvenido docente"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -103,6 +104,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="NOMBRE Y APELLIDO"/>
           </Properties>
           <Constraints>
@@ -205,6 +207,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jl_curso4">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="10" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Sin curso"/>
               </Properties>
             </Component>
@@ -294,6 +299,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jl_curso1">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="10" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Sin curso"/>
               </Properties>
             </Component>
@@ -339,6 +347,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jl_curso5">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="10" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Sin curso"/>
               </Properties>
             </Component>
@@ -382,6 +393,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jl_curso2">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="10" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Sin curso"/>
               </Properties>
             </Component>
@@ -425,6 +439,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jl_curso3">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="10" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Sin curso"/>
               </Properties>
             </Component>
@@ -468,6 +485,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jl_curso6">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="10" style="0"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Sin curso"/>
               </Properties>
             </Component>

@@ -212,6 +212,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         });
 
         curs_n.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        curs_n.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         curs_n.setText("curso");
 
         volver.setText("VOLVER");
@@ -229,6 +230,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
             }
         });
 
+        jl_ndoc.setAlignment(java.awt.Label.CENTER);
         jl_ndoc.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jl_ndoc.setName(""); // NOI18N
         jl_ndoc.setText("nombredocente");
@@ -271,12 +273,12 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
                     .addGroup(layout.createSequentialGroup()
                         .addGap(33, 33, 33)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(curs_n, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jl_ndoc, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jl_ndoc, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(curs_n, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(84, 84, 84)
                         .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jb_calc, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)

@@ -1,7 +1,6 @@
 
 package POO_Proy_Paquete;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 public class rng_notas_iniciales {

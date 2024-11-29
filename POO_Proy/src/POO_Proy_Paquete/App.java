@@ -124,11 +124,13 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
 
         jl_n.setFont(new java.awt.Font("Sitka Subheading", 1, 20)); // NOI18N
         jl_n.setForeground(new java.awt.Color(255, 255, 255));
-        jl_n.setText("NOMBRES Y APELLIDO");
+        jl_n.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jl_n.setText("Bienvenido docente");
         jPanel1.add(jl_n, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 270, 50));
 
         jl_n_doc.setFont(new java.awt.Font("Sitka Subheading", 1, 18)); // NOI18N
         jl_n_doc.setForeground(new java.awt.Color(255, 255, 255));
+        jl_n_doc.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jl_n_doc.setText("NOMBRE Y APELLIDO");
         jPanel1.add(jl_n_doc, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 210, 50));
 
@@ -151,6 +153,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
             }
         });
 
+        jl_curso4.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jl_curso4.setText("Sin curso");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -201,6 +204,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
         jSeparator5.setBackground(new java.awt.Color(204, 204, 204));
         jSeparator5.setForeground(new java.awt.Color(51, 51, 51));
 
+        jl_curso1.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jl_curso1.setText("Sin curso");
 
         javax.swing.GroupLayout jp_curs1Layout = new javax.swing.GroupLayout(jp_curs1);
@@ -237,6 +241,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
             }
         });
 
+        jl_curso5.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jl_curso5.setText("Sin curso");
 
         javax.swing.GroupLayout jp_curs5Layout = new javax.swing.GroupLayout(jp_curs5);
@@ -268,6 +273,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
             }
         });
 
+        jl_curso2.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jl_curso2.setText("Sin curso");
 
         javax.swing.GroupLayout jp_curs2Layout = new javax.swing.GroupLayout(jp_curs2);
@@ -298,6 +304,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
             }
         });
 
+        jl_curso3.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jl_curso3.setText("Sin curso");
 
         javax.swing.GroupLayout jp_curs3Layout = new javax.swing.GroupLayout(jp_curs3);
@@ -328,6 +335,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
             }
         });
 
+        jl_curso6.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jl_curso6.setText("Sin curso");
 
         javax.swing.GroupLayout jp_curs6Layout = new javax.swing.GroupLayout(jp_curs6);
