@@ -9,7 +9,7 @@ public abstract class Cuenta{
     this.id_cuenta = id;
     this.contraseña = pass;
     }
-    
+
     
     //Métodos get y set
     public String getId_cuenta() {

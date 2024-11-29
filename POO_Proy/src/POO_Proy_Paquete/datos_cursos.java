@@ -23,6 +23,10 @@ interface datos_cursos {
     String secc5 = "sección5";
     String secc6 = "sección6";
     String secc7 = "sección7";
-
+    //notas iniciales
     int notasE1[] = {10,12,17,15};
+    int notasE2[] = {10,12,17,15};
+    int notasE3[] = {10,12,17,15};
+    int notasE4[] = {10,12,17,15};
+    int notasE5[] = {10,12,17,15};
 }

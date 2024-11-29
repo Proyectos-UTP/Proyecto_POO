@@ -6,6 +6,7 @@
 package POO_Proy_Paquete;
 import POO_Proy_Paquete.Main_inicial;
 import static POO_Proy_Paquete.textos.t_nodata;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 /**
  *
@@ -23,7 +24,9 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     
     public void login_d1()
     {
+    
     jl_n_doc.setText(nD1 + " " + appD1);
+    
     Curso_general c1 = new Curso_general(0, 0, 0, 0, cal2, secc1);
     Curso_general c2 = new Curso_general(0, 0, 0, 0, mecc,secc2);
     Curso_general c3 = new Curso_general(0, 0, 0, 0, Estinf,secc3);
@@ -31,12 +34,15 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     jl_curso2.setText(c2.getNombre() + " " + "(" + c2.getIdseccion() + ")");
     jl_curso3.setText(c3.getNombre() + " " + "(" + c3.getIdseccion() + ")");
     
+    rng_notas_iniciales randnum = new rng_notas_iniciales();
+
     }
     
     
     public void login_d2()
     {
     jl_n_doc.setText(nD2 + " " + appD2);
+    
     Curso_general c1 = new Curso_general(0, 0, 0, 0, POO, secc5);
     Curso_general c2 = new Curso_general(0, 0, 0, 0, Badatos,secc6);
     Curso_general c3 = new Curso_general(0, 0, 0, 0, TGS,secc7);
@@ -45,6 +51,8 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     jl_curso2.setText(c2.getNombre() + " " + "(" + c2.getIdseccion() + ")");
     jl_curso3.setText(c3.getNombre() + " " + "(" + c3.getIdseccion() + ")");
     jl_curso4.setText(c4.getNombre() + " " + "(" + c4.getIdseccion() + ")");
+    
+    
     
     }
 
@@ -116,7 +124,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
 
         jl_n.setFont(new java.awt.Font("Sitka Subheading", 1, 20)); // NOI18N
         jl_n.setForeground(new java.awt.Color(255, 255, 255));
-        jl_n.setText("Mallqui Chinchay Ruben");
+        jl_n.setText("NOMBRES Y APELLIDO");
         jPanel1.add(jl_n, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 270, 50));
 
         jl_n_doc.setFont(new java.awt.Font("Sitka Subheading", 1, 18)); // NOI18N
@@ -414,7 +422,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     private void jp_curs2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jp_curs2MouseReleased
                                 
                         CalculadorNotas CN = new CalculadorNotas();
-                        switch (jl_curso1.getText())
+                        switch (jl_curso2.getText())
                         {
                             case cal2 + " " + "(" + secc1 + ")": CN.curs1();
                             switch(jl_n_doc.getText())
@@ -473,7 +481,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                                 
                                 
                         CalculadorNotas CN = new CalculadorNotas();
-                        switch (jl_curso1.getText())
+                        switch (jl_curso4.getText())
                         {
                             case cal2 + " " + "(" + secc1 + ")": CN.curs1();
                             switch(jl_n_doc.getText())
@@ -532,7 +540,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                                 
                                 
                         CalculadorNotas CN = new CalculadorNotas();
-                        switch (jl_curso1.getText())
+                        switch (jl_curso5.getText())
                         {
                             case cal2 + " " + "(" + secc1 + ")": CN.curs1();
                             switch(jl_n_doc.getText())
@@ -591,7 +599,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                                 
                                 
                         CalculadorNotas CN = new CalculadorNotas();
-                        switch (jl_curso1.getText())
+                        switch (jl_curso3.getText())
                         {
                             case cal2 + " " + "(" + secc1 + ")": CN.curs1();
                             switch(jl_n_doc.getText())
@@ -650,7 +658,7 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
                                 
                                 
                         CalculadorNotas CN = new CalculadorNotas();
-                         switch (jl_curso1.getText())
+                         switch (jl_curso6.getText())
                         {
                             case cal2 + " " + "(" + secc1 + ")": CN.curs1();
                             switch(jl_n_doc.getText())
