@@ -82,10 +82,10 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
     notas5.add(randnum.rng_());}
     
     modelo.addRow(new Object[]{E1.getNombre(),E1.getApellido(),notas1.get(0),notas1.get(1),notas1.get(2),notas1.get(3)});
-    modelo.addRow(new Object[]{E2.getNombre(),E1.getApellido(),notas2.get(0),notas2.get(1),notas2.get(2),notas2.get(3)});
-    modelo.addRow(new Object[]{E3.getNombre(),E1.getApellido(),notas3.get(0),notas3.get(1),notas3.get(2),notas3.get(3)});
-    modelo.addRow(new Object[]{E4.getNombre(),E1.getApellido(),notas4.get(0),notas4.get(1),notas4.get(2),notas4.get(3)});
-    modelo.addRow(new Object[]{E5.getNombre(),E1.getApellido(),notas5.get(0),notas5.get(1),notas5.get(2),notas5.get(3)});
+    modelo.addRow(new Object[]{E2.getNombre(),E2.getApellido(),notas2.get(0),notas2.get(1),notas2.get(2),notas2.get(3)});
+    modelo.addRow(new Object[]{E3.getNombre(),E3.getApellido(),notas3.get(0),notas3.get(1),notas3.get(2),notas3.get(3)});
+    modelo.addRow(new Object[]{E4.getNombre(),E4.getApellido(),notas4.get(0),notas4.get(1),notas4.get(2),notas4.get(3)});
+    modelo.addRow(new Object[]{E5.getNombre(),E5.getApellido(),notas5.get(0),notas5.get(1),notas5.get(2),notas5.get(3)});
       
       }
       
