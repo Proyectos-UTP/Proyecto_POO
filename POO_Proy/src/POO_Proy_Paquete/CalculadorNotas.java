@@ -4,7 +4,6 @@
  */
 package POO_Proy_Paquete;
 
-import java.util.List;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -38,33 +37,6 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         this.jTable1.setModel(modelo);
     }
       private void filas(){
-          
-          /*
-          int cantalumns = 10;
-          Estudiante[] alumnum = new Estudiante[cantalumns];
-          List<List<Integer>> listas = new ArrayList<List<Integer>>();
-          for(int i = 0; i < alumnum.length; i++){
-              System.out.println("loopinicio" + i);
-              //Estudiante alumnnum = new Estudiante("test1", "test2", "test3", "test4");
-              List<Integer> lista = new ArrayList<>();
-              listas.add(lista);
-              
-              for (int j = 0; j < 4; i++){
-              lista.add(randnum.rng_());
-
-              }
-              System.out.println(lista.get(0));
-              System.out.println(lista.get(1));
-              System.out.println(lista.get(2));
-              System.out.println(lista.get(3));
-              
-              
-
-              System.out.println("loopfinal" + i);
-              //modelo.addRow(new Object[]{alumno.getNombre(),alumno.getApellido(),lista.get(0),lista.get(1),lista.get(2),lista.get(3)});
-          }*/
-          
-          
     ArrayList<Integer> notas1 = new ArrayList<Integer>();
     for(int i = 0; i < 4; i++){
     notas1.add(randnum.rng_());}
@@ -357,49 +329,10 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
         int i = jTable1.getSelectedRow();
         Curso_general curs = new Curso_general((int)jTable1.getModel().getValueAt(i,2), (int)jTable1.getModel().getValueAt(i, 3), (int)jTable1.getModel().getValueAt(i, 4), (int)jTable1.getModel().getValueAt(i, 5), "", "");
         modelo.setValueAt(curs.promedio(), i, 6);
-        System.out.println(curs.getPc1());
-        System.out.println(curs.getPc2());
-        System.out.println(curs.getPc3());
-        System.out.println(curs.getExfin());
-        System.out.println((int) curs.promedio());
-        curs = null;
-        /*  Cuenta alumno = new Cuenta();
-      CursoMat Mat2 = new CursoMat();
-      
-      alumno.setNombre(this.Nombre.getText());
-      alumno.setApellido(this.Apellido.getText());
-     Mat2.setPc1(Integer.parseInt(this.Pc1.getText()));
-     Mat2.setPc2(Integer.parseInt(this.Pc2.getText()));
-       Mat2.setPc3(Integer.parseInt(this.Pc3.getText()));
-            Mat2.setExp(Integer.parseInt(this.ExmParc.getText()));
-       Mat2.setExf(Integer.parseInt(this.ExmFin.getText()));
-      
-      
-      Object fila[]=new Object[8];
-              fila[0]=alumno.getNombre();
-               fila[1]=alumno.getApellido();
-               fila[2]=Mat2.getPc1();
-                fila[3]=Mat2.getPc2();
-                  fila[5]=Mat2.getExp();
-                 fila[4]=Mat2.getPc3();
-
-                   fila[6]=Mat2.getExf();
-                    fila[7]=Mat2.promedio();
-                    modelo.addRow(fila);*/
-        
     }//GEN-LAST:event_jb_calcActionPerformed
     
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
-        
-        //Esto de aca se supone que debería hacer que los números en los textfields de este jtable se actualizen al seleccionar una fila
-        /* if(jTable1.getSelectionModel().isSelectionEmpty())
-        {
-            int i = jTable1.getSelectedRow();
-            txtf_pc1.setText((String) modelo.getValueAt(i, 2));
-            txtf_pc2.setText((String) modelo.getValueAt(i, 3));
-            txtf_pc3.setText((String) modelo.getValueAt(i, 4));
-            txtf_exmfin.setText((String) modelo.getValueAt(i, 5));
-        }*/
+
     }//GEN-LAST:event_jTable1MouseClicked
 
     private void jb_updActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb_updActionPerformed
@@ -440,8 +373,7 @@ public class CalculadorNotas extends javax.swing.JFrame implements Credenciales,
             case nD2 + " " + appD2: AP.login_d2(); ;break;
         
         }
-        
-        
+
         AP.setVisible(true);
         dispose();
     }//GEN-LAST:event_volverMouseReleased

@@ -4,9 +4,6 @@
  */
 
 package POO_Proy_Paquete;
-import POO_Proy_Paquete.Main_inicial;
-import static POO_Proy_Paquete.textos.t_nodata;
-import java.util.ArrayList;
 import javax.swing.JOptionPane;
 /**
  *
@@ -33,8 +30,6 @@ public class App extends javax.swing.JFrame implements Credenciales, datos_curso
     jl_curso1.setText(c1.getNombre() + " " + "(" + c1.getIdseccion() + ")");
     jl_curso2.setText(c2.getNombre() + " " + "(" + c2.getIdseccion() + ")");
     jl_curso3.setText(c3.getNombre() + " " + "(" + c3.getIdseccion() + ")");
-    
-    rng_notas_iniciales randnum = new rng_notas_iniciales();
 
     }
     
